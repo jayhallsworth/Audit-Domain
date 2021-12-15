@@ -1,0 +1,8 @@
+$Start = get-date 18/04/18
+$End = get-date 19/04/18
+
+get-eventlog -ComputerName "PC2056.porterdodson.local" -log "System" -after $Start -before $End | FT TimeGenerated, TimeWritten, EntryType, EventID, Source, Message |export-csv PC2056_System_Events_180418.csv
+
+
+Raptor66
+

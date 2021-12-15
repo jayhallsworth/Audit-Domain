@@ -1,0 +1,3180 @@
+ 
+##################################################################### 
+##################################################################### 
+##################                                 ################## 
+##################     Active Directory Audit      ################## 
+##################                                 ################## 
+##################################################################### 
+##################################################################### 
+ 
+ 
+Clarendon Accadamy
+
+ 
+Audit By Jay Hallsworth
+Audit Date: 03/09/2019 11:42:47
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~     Active Directory Details     ~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+Forest Details
+--------------
+
+
+Name               : CLARENDON.LOCAL
+RootDomain         : CLARENDON.LOCAL
+ForestMode         : Windows2012Forest
+Domains            : {CLARENDON.LOCAL}
+SchemaMaster       : CLA-DC1.CLARENDON.LOCAL
+DomainNamingMaster : CLA-DC1.CLARENDON.LOCAL
+Sites              : {Default-First-Site-Name}
+
+
+
+There Are 1 UPN Suffix's in the forest: 
+clarendonacademy.com
+ 
+Domain Details
+--------------
+
+
+Name                 : CLARENDON
+NetBIOSName          : CLARENDON
+DomainMode           : Windows2012Domain
+DNSRoot              : CLARENDON.LOCAL
+PDCEmulator          : CLA-DC1.CLARENDON.LOCAL
+RIDMaster            : CLA-DC1.CLARENDON.LOCAL
+InfrastructureMaster : CLA-DC1.CLARENDON.LOCAL
+
+
+
+AD Sites
+--------
+There Are 1 sites in the forest: 
+Default-First-Site-Name
+ 
+Subnets
+There Are 0 Subnets: 
+Site Links
+
+
+Name                          : DEFAULTIPSITELINK
+Cost                          : 100
+ReplicationFrequencyInMinutes : 180
+SitesIncluded                 : {CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=CLARENDON,DC=LOCAL}
+
+
+
+ 
+Trusts
+------
+
+
+Direction               : BiDirectional
+DisallowTransivity      : False
+DistinguishedName       : CN=curriculum.clarendon.wilts.sch.uk,CN=System,DC=CLARENDON,DC=LOCAL
+ForestTransitive        : True
+IntraForest             : False
+IsTreeParent            : False
+IsTreeRoot              : False
+Name                    : curriculum.clarendon.wilts.sch.uk
+ObjectClass             : trustedDomain
+ObjectGUID              : 4c9b5220-2ac0-4247-8644-88c72cdbf0d2
+SelectiveAuthentication : False
+SIDFilteringForestAware : True
+SIDFilteringQuarantined : False
+Source                  : DC=CLARENDON,DC=LOCAL
+Target                  : curriculum.clarendon.wilts.sch.uk
+TGTDelegation           : False
+TrustAttributes         : 72
+TrustedPolicy           : 
+TrustingPolicy          : 
+TrustType               : Uplevel
+UplevelOnly             : False
+UsesAESKeys             : False
+UsesRC4Encryption       : False
+PropertyNames           : {Direction, DisallowTransivity, DistinguishedName, ForestTransitive...}
+AddedProperties         : {}
+RemovedProperties       : {}
+ModifiedProperties      : {}
+PropertyCount           : 23
+
+
+
+ 
+Fine Grain Password Policy
+--------------------------
+There Are No Fine Grain Password Policies
+ 
+~~~~~~~~~~~~~~~     Domain Controllers     ~~~~~~~~~~~~~~~
+There are 2 GCs In The Forest:
+CLA-DC1.CLARENDON.LOCAL
+CLA-DC2.CLARENDON.LOCAL
+
+
+Hostname                        : CLA-DC1.CLARENDON.LOCAL
+NIC's                           : 1
+IP Address                      : 10.10.8.10 
+IP Subnet                       : 255.255.248.0
+MAC Address                     : 00:0C:29:72:FA:0F
+DNS                             : 10.10.8.11 ; 10.10.8.10; 
+DNS Suffix Search Order         : CLARENDON.LOCAL ; 
+DNS Enabled For Wins            : False
+Domain DNS Registration Enabled : False
+Full DNS Registration Enabled   : True
+DHCP Enabled                    : False
+DHCP Lease Obtained             : 
+DHCP Lease Expires              : 
+
+Hostname                        : CLA-DC2.CLARENDON.LOCAL
+NIC's                           : 1
+IP Address                      : 10.10.8.11 
+IP Subnet                       : 255.255.248.0
+MAC Address                     : 00:50:56:A3:43:0A
+DNS                             : 10.10.8.10 ; 10.10.8.11 ; 127.0.0.1; 
+DNS Suffix Search Order         : CLARENDON.LOCAL ; 
+DNS Enabled For Wins            : False
+Domain DNS Registration Enabled : False
+Full DNS Registration Enabled   : True
+DHCP Enabled                    : False
+DHCP Lease Obtained             : 
+DHCP Lease Expires              : 
+
+
+
+
+Site                    Name    IsGlobalCatalog IsReadOnly IPv4Address
+----                    ----    --------------- ---------- -----------
+Default-First-Site-Name CLA-DC1            True      False 10.10.8.10 
+
+
+
+Site                    Name    IsGlobalCatalog IsReadOnly IPv4Address
+----                    ----    --------------- ---------- -----------
+Default-First-Site-Name CLA-DC2            True      False 10.10.8.11 
+
+
+
+HostName                OperatingSystem         OperatingSystemHotfix   OperatingSystemServiceP OperatingSystemVersion 
+                                                                        ack                                            
+--------                ---------------         ---------------------   ----------------------- ---------------------- 
+CLA-DC1.CLARENDON.LOCAL Windows Server 2012 ...                                                 6.2 (9200)             
+
+
+
+HostName                OperatingSystem         OperatingSystemHotfix   OperatingSystemServiceP OperatingSystemVersion 
+                                                                        ack                                            
+--------                ---------------         ---------------------   ----------------------- ---------------------- 
+CLA-DC2.CLARENDON.LOCAL Windows Server 2012 ...                                                 6.2 (9200)             
+
+
+ReplicaDirectoryServer In The Domain
+CLA-DC1.CLARENDON.LOCAL
+CLA-DC2.CLARENDON.LOCAL
+DCDIAG has been run on CLA-DC1.CLARENDON.LOCAL And the output saved to .\DomainAudit_Mar19\dcdiag_CLA-DC1.CLARENDON.LOCAL.txt
+DCDIAG has been run on CLA-DC2.CLARENDON.LOCAL And the output saved to .\DomainAudit_Mar19\dcdiag_CLA-DC2.CLARENDON.LOCAL.txt
+ 
+~~~~~~~~~~~~~~~     Users & Groups     ~~~~~~~~~~~~~~~
+There are 2526 User Accounts In Total
+ - Of which approximatly 1094 have been inactive for 90 days
+A list of Active Users has been output to the ActiveUsers.txt file 
+ 
+Users With Password Never Expires
+There are 864 Users with password never expires
+A list of Users with password never expires has been output to the PasswordNeverExpires.txt file 
+Domain Admin Security Group Members
+There are 17 Users In The Domain Admins Group (Recursive)
+
+Name                     
+----                     
+hyp44F8sK9!!j            
+Computerworld Support    
+Clarendon Service Account
+Roy Williams             
+servicepa                
+NASservice               
+Sam McAndrew             
+serviceprinters          
+PRTG Sevice account      
+serviceprinters1         
+EdgeConnectorService     
+Roy Williams (Admin)     
+Sam McAndrew (Admin)     
+SCCM-SQL-admin           
+Software Install         
+Palo Alto                
+Rob Knott                
+
+
+Enterprise Admin Security Group Members
+There are 14 Users In The Enterprise Admins Group (Recursive)
+
+Name                     
+----                     
+Rob Knott                
+AAD CONNECT              
+EdgeConnectorService     
+serviceprinters1         
+serviceprinters          
+Sam McAndrew             
+NASservice               
+servicepa                
+Roy Williams             
+Sam McAndrew (Admin)     
+Roy Williams (Admin)     
+Clarendon Service Account
+Computerworld Support    
+hyp44F8sK9!!j            
+
+
+Schema Admin Security Group Members
+There are 16 Users In The Schema Admins Group (Recursive)
+
+Name                     
+----                     
+Rob Knott                
+EdgeConnectorService     
+serviceprinters1         
+PRTG Sevice account      
+Sevice Hap V10           
+Service HAP              
+serviceprinters          
+Sam McAndrew             
+NASservice               
+servicepa                
+Roy Williams             
+Sam McAndrew (Admin)     
+Roy Williams (Admin)     
+Clarendon Service Account
+Computerworld Support    
+hyp44F8sK9!!j            
+
+
+Security Groups
+There are 42 Domain Local Groups
+There are 152 Global Groups
+There are 23 Universal Groups
+A list of Security Groups has been output to the SecurityGroups.txt file 
+~~~~~~~~~~~~~~~     OU Details     ~~~~~~~~~~~~~~~
+OU Structure
+------------
+
+CanonicalName                                                                                                          
+-------------                                                                                                          
+CLARENDON.LOCAL/Access Control                                                                                         
+CLARENDON.LOCAL/Access Control/Areas                                                                                   
+CLARENDON.LOCAL/Access Control/DoorGroups                                                                              
+CLARENDON.LOCAL/Access Control/Doors                                                                                   
+CLARENDON.LOCAL/Access Control/Schedules                                                                               
+CLARENDON.LOCAL/Access Control/Templates                                                                               
+CLARENDON.LOCAL/Access Control/Visitors                                                                                
+CLARENDON.LOCAL/CLARENDON GROUPS                                                                                       
+CLARENDON.LOCAL/CLARENDON GROUPS/Controlled Assessment Group                                                           
+CLARENDON.LOCAL/CLARENDON GROUPS/Distrubution Groups                                                                   
+CLARENDON.LOCAL/CLARENDON GROUPS/Email Groups                                                                          
+CLARENDON.LOCAL/CLARENDON GROUPS/Printer Groups                                                                        
+CLARENDON.LOCAL/CLARENDON GROUPS/Security Groups                                                                       
+CLARENDON.LOCAL/CLARENDON GROUPS/SIMS Groups                                                                           
+CLARENDON.LOCAL/Clarendon ICT Machines                                                                                 
+CLARENDON.LOCAL/CLARENDON Left Users                                                                                   
+CLARENDON.LOCAL/CLARENDON Left Users/Intake-10 Leavers                                                                 
+CLARENDON.LOCAL/CLARENDON Left Users/Intake-11 Leavers                                                                 
+CLARENDON.LOCAL/CLARENDON Left Users/Intake-12 Leavers                                                                 
+CLARENDON.LOCAL/CLARENDON Left Users/Intake-13 Leavers                                                                 
+CLARENDON.LOCAL/CLARENDON Left Users/Intake-14 Leavers                                                                 
+CLARENDON.LOCAL/CLARENDON Left Users/Intake-15 Leavers                                                                 
+CLARENDON.LOCAL/CLARENDON Left Users/Intake-16 Leavers                                                                 
+CLARENDON.LOCAL/CLARENDON Left Users/Intake-17 Leavers                                                                 
+CLARENDON.LOCAL/CLARENDON Left Users/Staff                                                                             
+CLARENDON.LOCAL/CLARENDON SERVERS                                                                                      
+CLARENDON.LOCAL/CLARENDON SERVERS/Attached-Storage                                                                     
+CLARENDON.LOCAL/CLARENDON USERS                                                                                        
+CLARENDON.LOCAL/CLARENDON USERS/Acorn                                                                                  
+CLARENDON.LOCAL/CLARENDON USERS/Business Staff                                                                         
+CLARENDON.LOCAL/CLARENDON USERS/Domain Admins                                                                          
+CLARENDON.LOCAL/CLARENDON USERS/Guests                                                                                 
+CLARENDON.LOCAL/CLARENDON USERS/Sharepoint                                                                             
+CLARENDON.LOCAL/CLARENDON USERS/Sharepoint/New Environment                                                             
+CLARENDON.LOCAL/CLARENDON USERS/Staff                                                                                  
+CLARENDON.LOCAL/CLARENDON USERS/Staff/Admin                                                                            
+CLARENDON.LOCAL/CLARENDON USERS/Staff/Apprentices                                                                      
+CLARENDON.LOCAL/CLARENDON USERS/Staff/Catering                                                                         
+CLARENDON.LOCAL/CLARENDON USERS/Staff/Cover-Staff                                                                      
+CLARENDON.LOCAL/CLARENDON USERS/Staff/Email Accounts                                                                   
+CLARENDON.LOCAL/CLARENDON USERS/Staff/Exams                                                                            
+CLARENDON.LOCAL/CLARENDON USERS/Staff/Finance                                                                          
+CLARENDON.LOCAL/CLARENDON USERS/Staff/Governors                                                                        
+CLARENDON.LOCAL/CLARENDON USERS/Staff/Library                                                                          
+CLARENDON.LOCAL/CLARENDON USERS/Staff/New Users NOT STARTED                                                            
+CLARENDON.LOCAL/CLARENDON USERS/Staff/Non Teaching Staff                                                               
+CLARENDON.LOCAL/CLARENDON USERS/Staff/PGCE                                                                             
+CLARENDON.LOCAL/CLARENDON USERS/Staff/Premises                                                                         
+CLARENDON.LOCAL/CLARENDON USERS/Staff/PSL                                                                              
+CLARENDON.LOCAL/CLARENDON USERS/Staff/Resources                                                                        
+CLARENDON.LOCAL/CLARENDON USERS/Staff/Supply                                                                           
+CLARENDON.LOCAL/CLARENDON USERS/Staff/TA                                                                               
+CLARENDON.LOCAL/CLARENDON USERS/Staff/Teaching-staff                                                                   
+CLARENDON.LOCAL/CLARENDON USERS/Students                                                                               
+CLARENDON.LOCAL/CLARENDON USERS/Students/Examinations                                                                  
+CLARENDON.LOCAL/CLARENDON USERS/Students/Examinations/Archive                                                          
+CLARENDON.LOCAL/CLARENDON USERS/Students/Examinations/Controlled Assesment                                             
+CLARENDON.LOCAL/CLARENDON USERS/Students/Examinations/Controlled Assesment/CS2017-18                                   
+CLARENDON.LOCAL/CLARENDON USERS/Students/Examinations/Controlled Assesment/DA2017-18                                   
+CLARENDON.LOCAL/CLARENDON USERS/Students/Examinations/Controlled Assesment/Y13DA2017-18                                
+CLARENDON.LOCAL/CLARENDON USERS/Students/Examinations/Generic Exam Logins                                              
+CLARENDON.LOCAL/CLARENDON USERS/Students/Examinations/Pearson Online Exams                                             
+CLARENDON.LOCAL/CLARENDON USERS/Students/Examinations/Year 10                                                          
+CLARENDON.LOCAL/CLARENDON USERS/Students/Examinations/Year 11                                                          
+CLARENDON.LOCAL/CLARENDON USERS/Students/Examinations/Year 12                                                          
+CLARENDON.LOCAL/CLARENDON USERS/Students/Examinations/Year 13                                                          
+CLARENDON.LOCAL/CLARENDON USERS/Students/Examinations/Year 8                                                           
+CLARENDON.LOCAL/CLARENDON USERS/Students/Examinations/Year 9                                                           
+CLARENDON.LOCAL/CLARENDON USERS/Students/Intake-12                                                                     
+CLARENDON.LOCAL/CLARENDON USERS/Students/Intake-13                                                                     
+CLARENDON.LOCAL/CLARENDON USERS/Students/Intake-13/here                                                                
+CLARENDON.LOCAL/CLARENDON USERS/Students/Intake-14                                                                     
+CLARENDON.LOCAL/CLARENDON USERS/Students/Intake-15                                                                     
+CLARENDON.LOCAL/CLARENDON USERS/Students/Intake-16                                                                     
+CLARENDON.LOCAL/CLARENDON USERS/Students/Intake-17                                                                     
+CLARENDON.LOCAL/CLARENDON USERS/Students/Intake-18                                                                     
+CLARENDON.LOCAL/CLARENDON USERS/Test                                                                                   
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS                                                                                 
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops                                                                        
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/AG                                                                     
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/B1M                                                                    
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/B2M                                                                    
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/Classrooms                                                             
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/D1U                                                                    
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/D4                                                                     
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/D8                                                                     
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/EMC                                                                    
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/I1                                                                     
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/I2                                                                     
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/I3                                                                     
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/I4                                                                     
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/ICT-Office                                                             
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/L5                                                                     
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/LIBRARY                                                                
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/Offices                                                                
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/Offices/AdminOffice                                                    
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/Offices/Eagle Office                                                   
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/Offices/ExamsOffice                                                    
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/Offices/Falcon Office                                                  
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/Offices/Finance Office                                                 
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/Offices/Heads office                                                   
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/Offices/Kestrel Office                                                 
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/Offices/Resources                                                      
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/Printer Test                                                           
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/S7                                                                     
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/Staff-Room                                                             
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Desktops/TestOU                                                                 
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Laptops                                                                         
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/Laptops/Offline Files                                                           
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/mac                                                                             
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/MAC Based Objects                                                               
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/MAC Based Objects/Card Readers                                                  
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/MAC Based Objects/Computers                                                     
+CLARENDON.LOCAL/CLARENDON WORKSTATIONS/MAC Based Objects/Printers                                                      
+CLARENDON.LOCAL/Domain Controllers                                                                                     
+CLARENDON.LOCAL/External Mail Contacts                                                                                 
+CLARENDON.LOCAL/Gov Mail Contacts                                                                                      
+CLARENDON.LOCAL/Microsoft Exchange Security Groups                                                                     
+CLARENDON.LOCAL/Mitel                                                                                                  
+
+
+~~~~~~~~~~~~~~~     Group Policy Details     ~~~~~~~~~~~~~~~
+There are 108 GPOs
+
+DisplayName                                             GpoStatus CreationTime        ModificationTime   
+-----------                                             --------- ------------        ----------------   
+Acceptable Use Policy                        UserSettingsDisabled 01/05/2015 10:39:09 06/12/2017 14:54:22
+Acorn Drive Maps                               AllSettingsEnabled 21/09/2018 09:03:25 21/09/2018 08:04:36
+Admin Screensaver                        ComputerSettingsDisabled 24/05/2018 14:48:50 24/05/2018 13:50:42
+Admin Upstairs Printer                       UserSettingsDisabled 27/02/2019 10:07:07 27/02/2019 10:07:34
+CA Shortcuts                             ComputerSettingsDisabled 22/09/2017 10:08:28 04/12/2017 13:23:22
+Chrome                                   ComputerSettingsDisabled 09/09/2015 10:56:47 06/12/2017 14:52:36
+Clarendon Administrator Settings               AllSettingsEnabled 09/03/2018 14:19:23 09/03/2018 14:25:52
+Clarendon Exam Restrictions                    AllSettingsEnabled 21/03/2018 15:11:10 25/01/2019 12:08:38
+Clarendon Follow Me                            AllSettingsEnabled 26/02/2018 09:33:52 21/05/2018 12:35:16
+Clarendon Office Printers                      AllSettingsEnabled 14/03/2018 13:43:06 23/05/2018 12:15:46
+Computer Shutdown 1800                         AllSettingsEnabled 16/04/2018 10:19:47 21/09/2018 18:10:30
+Computer Shutdown 2000                         AllSettingsEnabled 16/04/2018 10:24:44 21/09/2018 18:10:54
+Computer.Domain 802.1x LAN                   UserSettingsDisabled 02/08/2013 11:56:21 06/12/2017 14:54:22
+Computer.PrintersW10                           AllSettingsEnabled 09/02/2019 23:17:37 09/02/2019 23:32:44
+Control Panel                            ComputerSettingsDisabled 31/07/2013 12:42:47 28/09/2018 08:25:08
+Default Domain Controllers Policy              AllSettingsEnabled 10/05/2013 09:50:38 10/10/2018 10:24:00
+Default Domain Policy                          AllSettingsEnabled 10/05/2013 09:50:38 02/12/2018 21:41:44
+Delprof                                      UserSettingsDisabled 16/01/2019 15:28:48 16/01/2019 15:30:52
+Deny Login OWA Users                         UserSettingsDisabled 16/11/2017 10:44:53 11/07/2018 11:02:32
+Desktop Redirect                         ComputerSettingsDisabled 30/08/2013 08:20:28 02/05/2018 08:15:44
+Desktop Shortcuts                        ComputerSettingsDisabled 29/08/2013 09:14:10 16/05/2018 08:24:18
+Detailed Login                               UserSettingsDisabled 02/02/2016 14:18:05 11/01/2019 20:27:30
+DirectAccess Client Settings                 UserSettingsDisabled 23/01/2018 15:04:52 23/10/2018 09:52:16
+DirectAccess Server Settings                 UserSettingsDisabled 23/01/2018 15:04:52 23/10/2018 09:52:16
+Disable Chrome Addons                    ComputerSettingsDisabled 05/06/2015 08:23:11 06/12/2017 14:52:36
+Disable fast logon                           UserSettingsDisabled 28/11/2013 10:56:24 09/03/2018 11:00:06
+Disable Fast User Switch                       AllSettingsEnabled 04/07/2018 12:20:36 09/01/2019 15:54:44
+Disable FireFox Addons                   ComputerSettingsDisabled 05/06/2015 11:23:19 06/12/2017 14:52:52
+Document Redirection CA                  ComputerSettingsDisabled 22/09/2017 10:23:31 22/09/2017 09:25:04
+Document Redirection Intake-17           ComputerSettingsDisabled 17/08/2017 09:47:14 17/08/2017 09:45:52
+Domain 802.1x WiFi                           UserSettingsDisabled 01/08/2013 10:54:31 06/12/2017 14:54:22
+domain admin drive maps                  ComputerSettingsDisabled 12/08/2013 10:12:46 24/05/2018 07:33:18
+Drive Mappings for Staff                 ComputerSettingsDisabled 21/08/2013 09:15:12 11/01/2019 10:39:20
+Drive Mappings for Students              ComputerSettingsDisabled 18/09/2013 14:38:01 09/01/2019 12:54:16
+Firewall Settings                            UserSettingsDisabled 08/08/2013 12:49:48 06/12/2017 14:54:38
+Folder Redirection NEW                   ComputerSettingsDisabled 19/01/2018 14:18:58 26/11/2018 08:58:06
+Follow Me Printers                       ComputerSettingsDisabled 19/12/2018 11:49:24 29/01/2019 10:34:38
+Google Homepage                          ComputerSettingsDisabled 09/10/2015 14:04:34 06/12/2017 14:50:52
+Guest Settings                           ComputerSettingsDisabled 15/09/2014 14:32:23 05/10/2018 20:19:32
+I3 Printer                                   UserSettingsDisabled 14/02/2019 12:27:29 14/02/2019 12:28:56
+Intake 11 Office Settings                ComputerSettingsDisabled 21/05/2018 15:09:11 21/05/2018 14:10:52
+Intake 12 Office Settings                ComputerSettingsDisabled 21/05/2018 15:07:17 21/05/2018 14:09:04
+Intake 13 Office Settings                ComputerSettingsDisabled 21/05/2018 15:04:52 21/05/2018 14:06:36
+Intake 14 Office Settings                ComputerSettingsDisabled 21/05/2018 15:02:41 21/05/2018 14:04:46
+Intake 15 Office Settings                ComputerSettingsDisabled 21/05/2018 14:53:36 21/05/2018 14:01:04
+Intake 16 Office Settings                ComputerSettingsDisabled 21/05/2018 14:51:00 27/11/2018 09:29:26
+Intake 17 Office Settings                ComputerSettingsDisabled 21/05/2018 14:46:19 23/05/2018 12:03:24
+Intranet Settings IE                     ComputerSettingsDisabled 13/11/2013 15:48:59 13/01/2019 19:22:00
+Lanschool Channel  1/AG                      UserSettingsDisabled 24/08/2015 12:05:33 20/02/2019 15:30:34
+LanSchool Channel 1/LIB                      UserSettingsDisabled 17/08/2015 10:50:14 20/02/2019 15:31:46
+Lanschool Channel 10/D4                      UserSettingsDisabled 18/05/2018 12:52:06 20/02/2019 15:32:28
+Lanschool Channel 13                           AllSettingsEnabled 27/11/2014 11:10:47 27/11/2014 11:12:50
+Lanschool Channel 13/I3                      UserSettingsDisabled 24/08/2015 11:37:03 20/02/2019 15:33:26
+Lanschool Channel 14/B2M                     UserSettingsDisabled 22/06/2015 14:34:36 16/12/2015 10:45:34
+Lanschool Channel 16/B1M                     UserSettingsDisabled 24/08/2015 12:07:51 20/02/2019 15:34:22
+Lanschool Channel 2/I4                       UserSettingsDisabled 24/08/2015 11:34:37 20/02/2019 15:35:00
+Lanschool Channel 3/I2                         AllSettingsEnabled 10/06/2015 09:27:10 20/02/2019 15:35:26
+Lanschool Channel 5/S7                       UserSettingsDisabled 24/08/2015 12:01:39 20/02/2019 15:35:52
+Lanschool Channel 7/I1                       UserSettingsDisabled 20/04/2015 08:29:14 20/02/2019 15:36:32
+Lanschool Channel 9/EMC                      UserSettingsDisabled 03/08/2015 11:08:06 20/02/2019 15:37:02
+Login Settings                               UserSettingsDisabled 09/08/2013 14:36:40 02/05/2018 11:37:10
+My Documents Exam Users                  ComputerSettingsDisabled 28/04/2016 14:51:37 24/03/2017 10:13:24
+my documents intake 10                         AllSettingsEnabled 06/05/2014 13:15:54 24/11/2016 14:11:00
+my documents intake 11                         AllSettingsEnabled 06/05/2014 13:12:20 24/11/2016 14:10:42
+my documents intake 12                         AllSettingsEnabled 06/05/2014 13:04:51 24/11/2016 14:10:10
+my documents intake 13                         AllSettingsEnabled 06/05/2014 13:00:16 11/04/2016 14:57:52
+My Documents Intake 14                   ComputerSettingsDisabled 30/06/2014 11:06:45 24/11/2016 14:09:18
+My documents Intake 15                   ComputerSettingsDisabled 23/06/2015 09:53:58 24/11/2016 14:09:00
+My documents Intake 16                   ComputerSettingsDisabled 29/06/2016 10:51:19 27/11/2018 09:29:26
+office intake 15                         ComputerSettingsDisabled 23/06/2015 11:13:28 29/06/2016 09:59:56
+office intake 16                         ComputerSettingsDisabled 29/06/2016 10:45:54 29/06/2016 09:59:42
+Papercut                                 ComputerSettingsDisabled 26/09/2013 15:27:08 06/12/2017 14:50:52
+Power Settings                               UserSettingsDisabled 22/07/2015 08:13:45 18/01/2018 14:00:30
+Printers                                 ComputerSettingsDisabled 03/08/2016 10:25:32 29/11/2018 10:46:52
+Program Shortcuts All Users                    AllSettingsEnabled 21/06/2018 09:51:23 21/06/2018 08:59:20
+recovery hack fix                              AllSettingsEnabled 04/11/2014 13:01:44 18/01/2018 14:00:56
+Roaming Profile Location W10Staff              AllSettingsEnabled 15/12/2017 10:42:18 25/04/2018 10:16:52
+Shortcuts                                ComputerSettingsDisabled 12/09/2013 16:03:11 13/01/2019 15:59:56
+Staff Folder redirection                 ComputerSettingsDisabled 07/08/2015 15:19:18 11/09/2018 09:48:58
+Staff Internet Settings                  ComputerSettingsDisabled 17/11/2016 14:57:01 16/01/2019 10:35:04
+staff printers                           ComputerSettingsDisabled 04/05/2016 11:01:17 13/09/2018 09:05:56
+STU Background                           ComputerSettingsDisabled 24/02/2015 08:26:09 21/06/2018 09:07:32
+TEST W10 Folder Redirection              ComputerSettingsDisabled 19/12/2018 12:55:15 19/12/2018 13:26:32
+TEST W10 Student Restrictions            ComputerSettingsDisabled 19/12/2018 12:56:12 07/01/2019 18:29:36
+W10 Additional Exam Restrictions         ComputerSettingsDisabled 20/06/2018 09:35:31 13/01/2019 16:01:32
+W10 Admin Staff Shortcuts                      AllSettingsEnabled 19/06/2018 08:24:24 19/06/2018 07:35:30
+W10 Browser Settings (Pupils)                  AllSettingsEnabled 26/11/2017 14:47:42 15/01/2019 08:43:00
+W10 Chrome Settings                      ComputerSettingsDisabled 15/01/2019 08:10:55 15/01/2019 08:31:16
+W10 Chrome Settings Students             ComputerSettingsDisabled 15/01/2019 08:58:06 16/01/2019 07:51:00
+W10 Computer Settings                        UserSettingsDisabled 15/06/2017 13:51:32 28/02/2019 22:14:24
+W10 DELPROF                                  UserSettingsDisabled 19/04/2018 11:54:17 12/06/2018 10:31:00
+W10 Domain 802.1x LAN                        UserSettingsDisabled 04/12/2017 13:37:22 04/12/2017 14:24:06
+W10 Domain 802.1x WiFi                       UserSettingsDisabled 04/12/2017 13:36:10 06/12/2017 14:55:16
+W10 Folder Redirection                   ComputerSettingsDisabled 26/11/2017 14:10:27 13/01/2019 13:39:10
+W10 IE Settings                          ComputerSettingsDisabled 26/11/2017 16:30:57 15/01/2019 08:28:50
+W10 IE Settings Students                 ComputerSettingsDisabled 15/01/2019 08:53:34 16/01/2019 08:06:14
+W10 Office Printers                            AllSettingsEnabled 07/12/2017 14:03:07 19/12/2018 12:06:58
+W10 Staff Drive Mapping                  ComputerSettingsDisabled 29/11/2017 09:20:49 09/01/2019 08:05:46
+W10 Staff Office Settings                ComputerSettingsDisabled 08/11/2018 10:27:31 03/12/2018 08:59:04
+W10 Staff Profile Settings               ComputerSettingsDisabled 29/11/2017 10:05:55 31/01/2019 13:20:42
+W10 Staff Restrictions                   ComputerSettingsDisabled 26/11/2017 16:02:23 03/12/2018 08:48:18
+W10 Student Restrictions                       AllSettingsEnabled 26/11/2017 12:56:37 16/01/2019 08:11:52
+W10 Workstation Power Options (Desktops)     UserSettingsDisabled 29/11/2017 12:30:33 14/11/2018 08:32:44
+W10Start Shortcut Copy                       UserSettingsDisabled 21/01/2019 13:39:46 22/01/2019 09:08:16
+W7 DELPROF                                     AllSettingsEnabled 01/05/2018 14:21:07 18/05/2018 09:57:32
+Win7 Login Background                        UserSettingsDisabled 20/09/2013 14:51:41 07/12/2018 14:15:40
+Word 2010/2013 Exam restrictions         ComputerSettingsDisabled 25/06/2014 09:43:01 21/09/2017 10:01:34
+Wsus                                         UserSettingsDisabled 15/08/2013 13:55:39 19/06/2018 07:43:08
+
+
+Settings Report - See GPOReportsAll.html 
+ 
+GPOs With No Settings
+There are 1 GPOs with no settings
+No GPO's Without Settings Were Found
+ 
+Unlinked GPOs
+There are 25 Unlinked GPO's
+
+DisplayName                                                 Id                                                         
+-----------                                                 --                                                         
+Roaming Profile Location W10Staff                           0e7c5394-5265-4da4-aa79-82eddcc3c85b                       
+DirectAccess Client Settings                                10504311-7e2c-4277-930a-78ac26ea8fdf                       
+Lanschool Channel  1/AG                                     1ea427ef-3db2-4baa-ac31-b7682b5966cd                       
+office intake 16                                            257b9bc7-d95f-4eab-b9ac-7e568c5ba684                       
+my documents intake 11                                      269c3825-365a-46eb-a774-ee351f8200c7                       
+Word 2010/2013 Exam restrictions                            47fb2097-5cae-4d14-bb82-b61cde5f21a6                       
+Clarendon Office Printers                                   687cec5c-fc93-4135-ac17-a3441bcb315e                       
+Clarendon Administrator Settings                            6d5f6730-92e5-4f16-8ba3-4d60dc1cf53c                       
+W10 DELPROF                                                 6fb322dc-886e-4cf1-ac73-af590996fe2a                       
+Lanschool Channel 14/B2M                                    86facaff-4cc2-4d6d-98c3-cc7438ca7551                       
+Lanschool Channel 13                                        9e1a0711-a305-46ae-9734-30c61af60a9d                       
+My Documents Exam Users                                     ad965d34-68a3-44f8-802f-1cfa4e7dc588                       
+Delprof                                                     c35b41ed-b5b9-4675-9054-ddca14e36fe3                       
+my documents intake 10                                      c7f6b6e5-00ea-4b46-a01d-2b4bc4c02549                       
+DirectAccess Server Settings                                dda5185d-bfa9-42ed-bec8-5e5e229198ba                       
+Computer.PrintersW10                                        e1dfb972-a068-4248-9cd7-1c02390da6c3                       
+W10 Browser Settings (Pupils)                               e773d5f5-f8fa-4bdf-a120-d5f60634732e                       
+W10 Office Printers                                         e833ff4f-32a9-45b1-8552-440f113c11ee                       
+Clarendon Follow Me                                         e874e7c7-2d03-4da0-9b9c-2df3549c49a2                       
+Intake 11 Office Settings                                   f0b63bfa-6eb5-48a0-aca6-4132c182002a                       
+office intake 15                                            fe13eff2-c520-44ea-92d6-e949307ea3b0                       
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~     DNS Server Settings     ~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The DNS Server checked is:- 10.10.8.10
+Full Details can be found in this file - DNS_Server_FullDetails.txt
+ 
+Server Settings
+---------------
+
+ComputerName                                                                                                           
+------------                                                                                                           
+CLA-DC1.CLARENDON.LOCAL                                                                                                
+
+
+
+
+PollingInterval(s)                   : 180
+TombstoneInterval                    : 14.00:00:00
+DirectoryPartitionAutoEnlistInterval : 1.00:00:00
+LazyUpdateInterval(s)                : 3
+MinimumBackgroundLoadThreads         : 1
+RemoteReplicationDelay(s)            : 30
+
+
+
+Forwarding
+----------
+
+
+UseRootHint        : True
+Timeout(s)         : 3
+EnableReordering   : True
+IPAddress          : {194.168.4.123, 194.168.8.123}
+ReorderedIPAddress : {194.168.4.123, 194.168.8.123}
+
+
+
+ 
+Server Scavenging Settings
+--------------------------
+
+
+NoRefreshInterval  : 7.00:00:00
+RefreshInterval    : 7.00:00:00
+ScavengingInterval : 4.00:00:00
+ScavengingState    : False
+LastScavengeTime   : 07/03/2019 10:35:58
+
+
+
+~~~~~~~~~~~~~~~     Zone Details     ~~~~~~~~~~~~~~~
+
+ZoneName                 ZoneType IsReverseLookupZone ReplicationScope Notify        NotifyServers SecondaryServers Sec
+                                                                                                                    ure
+                                                                                                                    Sec
+                                                                                                                    ond
+                                                                                                                    ari
+                                                                                                                    es 
+--------                 -------- ------------------- ---------------- ------        ------------- ---------------- ---
+www.google.co.uk         Primary                False Domain           NotifyServers                                NoT
+youtubei.googleapis.com  Primary                False Domain           NotifyServers                                NoT
+www.youtube.com          Primary                False Domain           NotifyServers                                NoT
+youtube.googleapis.com   Primary                False Domain           NotifyServers                                NoT
+www.youtube-nocookie.com Primary                False Domain           NotifyServers                                NoT
+CLARENDON.LOCAL          Primary                False Domain           NotifyServers                                NoT
+www.bing.com             Primary                False Domain           NotifyServers                                NoT
+m.youtube.com            Primary                False Domain           NotifyServers                                NoT
+clarendonacademy.com     Primary                False Domain           NotifyServers                                NoT
+10.10.in-addr.arpa       Primary                 True Domain           NotifyServers                                NoT
+8.40.10.in-addr.arpa     Primary                 True Domain           NotifyServers                                NoT
+
+
+CLARENDON.LOCAL
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         NS         0                    01:00:00        cla-dc2.clarendon.local.                     
+@                         NS         0                    01:00:00        cla-dc1.clarendon.local.                     
+
+
+clarendonacademy.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         NS         0                    01:00:00        cla-dc1.clarendon.local.                     
+@                         NS         0                    01:00:00        cla-dc2.clarendon.local.                     
+
+
+m.youtube.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         NS         0                    01:00:00        cla-dc2.clarendon.local.                     
+@                         NS         0                    01:00:00        cla-dc1.clarendon.local.                     
+
+
+www.bing.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         NS         0                    01:00:00        cla-dc1.clarendon.local.                     
+@                         NS         0                    01:00:00        cla-dc2.clarendon.local.                     
+
+
+www.google.co.uk
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         NS         0                    01:00:00        cla-dc2.clarendon.local.                     
+@                         NS         0                    01:00:00        cla-dc1.clarendon.local.                     
+
+
+www.youtube.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         NS         0                    01:00:00        cla-dc2.clarendon.local.                     
+@                         NS         0                    01:00:00        cla-dc1.clarendon.local.                     
+
+
+www.youtube-nocookie.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         NS         0                    01:00:00        cla-dc2.clarendon.local.                     
+@                         NS         0                    01:00:00        cla-dc1.clarendon.local.                     
+
+
+youtube.googleapis.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         NS         0                    01:00:00        cla-dc2.clarendon.local.                     
+@                         NS         0                    01:00:00        cla-dc1.clarendon.local.                     
+
+
+youtubei.googleapis.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         NS         0                    01:00:00        cla-dc2.clarendon.local.                     
+@                         NS         0                    01:00:00        cla-dc1.clarendon.local.                     
+
+
+CLARENDON.LOCAL
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         SOA        0                    01:00:00        [31206075][cla-dc1.clarendon.local.][hostm...
+
+
+clarendonacademy.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         SOA        0                    01:00:00        [97][cla-dc1.clarendon.local.][hostmaster....
+
+
+m.youtube.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         SOA        0                    01:00:00        [2][cla-dc1.clarendon.local.][hostmaster.c...
+
+
+www.bing.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         SOA        0                    01:00:00        [7][cla-dc1.clarendon.local.][hostmaster.c...
+
+
+www.google.co.uk
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         SOA        0                    01:00:00        [2][cla-dc1.clarendon.local.][hostmaster.c...
+
+
+www.youtube.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         SOA        0                    01:00:00        [2][cla-dc1.clarendon.local.][hostmaster.c...
+
+
+www.youtube-nocookie.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         SOA        0                    01:00:00        [2][cla-dc1.clarendon.local.][hostmaster.c...
+
+
+youtube.googleapis.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         SOA        0                    01:00:00        [2][cla-dc1.clarendon.local.][hostmaster.c...
+
+
+youtubei.googleapis.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         SOA        0                    01:00:00        [2][cla-dc1.clarendon.local.][hostmaster.c...
+
+
+CLARENDON.LOCAL
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          09/03/2019 02:00:00  00:10:00        10.10.8.10                                   
+@                         A          09/03/2019 03:00:00  00:10:00        10.10.8.11                                   
+
+
+clarendonacademy.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        10.10.8.71                                   
+
+
+m.youtube.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        216.239.38.120                               
+
+
+www.bing.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        204.79.197.220                               
+
+
+www.google.co.uk
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        216.239.38.120                               
+
+
+www.youtube.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        216.239.38.120                               
+
+
+www.youtube-nocookie.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        216.239.38.120                               
+
+
+youtube.googleapis.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        216.239.38.120                               
+
+
+youtubei.googleapis.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        216.239.38.120                               
+
+
+CLARENDON.LOCAL
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+admin                     A          0                    01:00:00        10.10.0.3                                    
+ag                        A          0                    01:00:00        10.10.0.8                                    
+b12m                      A          0                    01:00:00        10.10.0.18                                   
+b34m                      A          0                    01:00:00        10.10.0.19                                   
+cla-dc1                   A          0                    01:00:00        10.10.8.10                                   
+CLA-DC2                   A          0                    01:00:00        10.10.8.11                                   
+CLA-MACSVR                A          0                    01:00:00        10.10.8.88                                   
+CLA-PALO                  A          0                    01:00:00        10.10.2.0                                    
+CLA-PROESX1               A          0                    01:00:00        10.10.1.101                                  
+CLA-PROESX1-Manage        A          0                    01:00:00        10.10.1.111                                  
+CLA-PROESX2               A          0                    01:00:00        10.10.1.102                                  
+CLA-PROESX2-Manage        A          0                    01:00:00        10.10.1.112                                  
+CLA-PROESX3               A          0                    01:00:00        10.10.1.103                                  
+CLA-PROESX3-Manage        A          0                    01:00:00        10.10.1.113                                  
+CLA-PROSANGROUP           A          0                    01:00:00        10.10.1.10                                   
+CLA-PROVC                 A          0                    01:00:00        10.10.1.100                                  
+CLA-VMA                   A          0                    01:00:00        10.10.1.51                                   
+CLA-vSphereSW             A          0                    01:00:00        10.10.1.2                                    
+CLA_PROSAS1               A          0                    01:00:00        10.10.1.11                                   
+conf                      A          0                    01:00:00        10.10.23.14                                  
+coppercore                A          0                    01:00:00        10.10.0.2                                    
+core                      A          0                    01:00:00        10.10.0.1                                    
+d8                        A          0                    01:00:00        10.10.0.17                                   
+DirectAccess-NLS          A          0                    01:00:00        10.10.8.60                                   
+directaccess-WebProbeHost A          0                    01:00:00        10.10.8.60                                   
+h4                        A          0                    01:00:00        10.10.0.21                                   
+h5                        A          0                    01:00:00        10.10.0.20                                   
+l89                       A          0                    01:00:00        10.10.0.7                                    
+mathattic                 A          0                    01:00:00        10.10.0.6                                    
+mitel                     A          0                    01:00:00        10.10.23.10                                  
+oldscience                A          0                    01:00:00        10.10.0.13                                   
+PA-500                    A          0                    01:00:00        10.10.2.0                                    
+PA-820                    A          0                    01:00:00        10.10.2.2                                    
+ReceptionVM               A          0                    00:15:00        10.10.8.107                                  
+s6                        A          0                    01:00:00        10.10.0.11                                   
+s7                        A          0                    01:00:00        10.10.0.14                                   
+SAM-ESXI                  A          0                    01:00:00        10.50.15.200                                 
+smr                       A          0                    01:00:00        10.10.23.13                                  
+staff                     A          0                    01:00:00        10.10.0.4                                    
+TCA-NAS                   A          0                    00:15:00        10.50.8.36                                   
+vi                        A          0                    01:00:00        10.10.0.10                                   
+
+
+clarendonacademy.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        10.10.8.71                                   
+apps                      A          0                    01:00:00        10.10.8.65                                   
+digSig                    A          0                    01:00:00        10.10.8.70                                   
+glpi                      A          0                    01:00:00        10.10.8.47                                   
+hap                       A          0                    01:00:00        10.10.8.39                                   
+helpdesk                  A          0                    01:00:00        10.10.8.58                                   
+library                   A          0                    01:00:00        10.10.8.55                                   
+library-intra             A          0                    01:00:00        10.10.8.55                                   
+mail                      A          0                    01:00:00        10.10.8.13                                   
+mpt                       A          0                    01:00:00        10.10.8.39                                   
+ocsi                      A          0                    01:00:00        10.10.8.46                                   
+ocsng                     A          0                    01:00:00        10.10.8.48                                   
+oliver                    A          0                    01:00:00        10.10.8.49                                   
+portal                    A          0                    01:00:00        10.10.8.68                                   
+RD                        A          0                    01:00:00        10.10.8.79                                   
+rss                       A          0                    01:00:00        10.10.8.39                                   
+safeg                     A          0                    01:00:00        10.10.8.75                                   
+SMR                       A          0                    01:00:00        10.10.23.13                                  
+stu                       A          0                    01:00:00        10.10.8.51                                   
+templates                 A          0                    01:00:00        10.10.8.39                                   
+testweb                   A          0                    01:00:00        10.10.8.58                                   
+vle                       A          0                    01:00:00        10.10.8.32                                   
+web                       A          0                    01:00:00        10.10.8.68                                   
+webprint                  A          0                    01:00:00        10.10.8.18                                   
+wordpress                 A          0                    01:00:00        10.10.8.71                                   
+www                       A          0                    01:00:00        10.10.8.71                                   
+xibo                      A          0                    01:00:00        10.10.8.70                                   
+
+
+m.youtube.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        216.239.38.120                               
+
+
+www.bing.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        204.79.197.220                               
+
+
+www.google.co.uk
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        216.239.38.120                               
+
+
+www.youtube.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        216.239.38.120                               
+
+
+www.youtube-nocookie.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        216.239.38.120                               
+
+
+youtube.googleapis.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        216.239.38.120                               
+
+
+youtubei.googleapis.com
+
+HostName                  RecordType Timestamp            TimeToLive      RecordData                                   
+--------                  ---------- ---------            ----------      ----------                                   
+@                         A          0                    01:00:00        216.239.38.120                               
+
+
+~~~~~~~~~~~~~~~     Other DNS Server Settings     ~~~~~~~~~~~~~~~
+CLA-DC2
+DNS Server Settings
+
+
+PollingInterval(s)                   : 180
+TombstoneInterval                    : 14.00:00:00
+DirectoryPartitionAutoEnlistInterval : 1.00:00:00
+LazyUpdateInterval(s)                : 3
+MinimumBackgroundLoadThreads         : 1
+RemoteReplicationDelay(s)            : 30
+
+
+
+DNS Forwarder Settings
+
+
+UseRootHint        : True
+Timeout(s)         : 3
+EnableReordering   : True
+IPAddress          : {194.168.4.123, 194.168.8.123}
+ReorderedIPAddress : {194.168.4.123, 194.168.8.123}
+
+
+
+DNS Scavenging Settings
+
+
+NoRefreshInterval  : 7.00:00:00
+RefreshInterval    : 7.00:00:00
+ScavengingInterval : 4.00:00:00
+ScavengingState    : False
+LastScavengeTime   : 07/03/2019 18:13:27
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~     DHCP Server Settings     ~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+IPAddress            DnsName                                                                         
+---------            -------                                                                         
+10.10.8.10           cla-dc1.clarendon.local                                                         
+255.0.0.1            cla-dc1.clarendon.local                                                         
+
+
+cla-dc1.clarendon.local
+DHCP Server Settings
+~~~~~~~~~~~~~~~~~~~
+
+               IsDomainJoined IsAuthorizedNap                   ConflictDetectionAttempts                    NapEnabled
+               -------------- ---------------                   -------------------------                    ----------
+                         True                                                           0                         False
+
+
+Server Options
+~~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                     81                                         {23}                                   
+
+
+DHCP Scopes
+~~~~~~~~~~~
+There are 38 DHCP Scopes on this server
+
+ScopeId         SubnetMask      Name           State    StartRange      EndRange        LeaseDuration                  
+-------         ----------      ----           -----    ----------      --------        -------------                  
+10.1.160.0      255.255.240.0   Old Network    Active   10.1.160.2      10.1.175.254    8.00:00:00                     
+10.10.8.0       255.255.248.0   Core           Active   10.10.8.100     10.10.8.150     8.00:00:00                     
+10.10.16.0      255.255.248.0   Voice          Active   10.10.16.2      10.10.22.254    8.00:00:00                     
+10.10.48.0      255.255.248.0   Deploy         Active   10.10.48.2      10.10.54.255    8.00:00:00                     
+10.10.56.0      255.255.248.0   CCTV           Active   10.10.56.10     10.10.62.254    8.00:00:00                     
+10.20.0.0       255.255.248.0   WAPS           Active   10.20.0.2       10.20.6.254     8.00:00:00                     
+10.20.8.0       255.255.248.0   LANA-Trust     Active   10.20.8.2       10.20.14.254    8.00:00:00                     
+10.20.16.0      255.255.248.0   LANA-Untrust   Active   10.20.16.2      10.20.22.254    8.00:00:00                     
+10.20.24.0      255.255.248.0   WiFiA-Trust    Active   10.20.24.2      10.20.31.254    8.00:00:00                     
+10.20.32.0      255.255.248.0   WifiA-Staff    Active   10.20.32.2      10.20.38.254    8.00:00:00                     
+10.20.40.0      255.255.248.0   WifiA-Yr12     Active   10.20.40.2      10.20.46.254    8.00:00:00                     
+10.20.48.0      255.255.248.0   WifiA-Yr911    Active   10.20.48.2      10.20.54.254    8.00:00:00                     
+10.20.56.0      255.255.248.0   WifiA-Yr78     Active   10.20.56.2      10.20.62.254    8.00:00:00                     
+10.20.64.0      255.255.248.0   WifiA-Guest    Active   10.20.64.2      10.20.70.254    8.00:00:00                     
+10.30.8.0       255.255.248.0   LANB-Trust     Active   10.30.8.2       10.30.14.254    8.00:00:00                     
+10.30.16.0      255.255.248.0   LANB-Untrust   Active   10.30.16.2      10.30.22.254    8.00:00:00                     
+10.30.24.0      255.255.248.0   WifiB-Trust    Active   10.30.24.2      10.30.30.254    8.00:00:00                     
+10.30.32.0      255.255.248.0   WifiB-Staff    Active   10.30.32.2      10.30.38.254    8.00:00:00                     
+10.30.40.0      255.255.248.0   WiFiB-Yr12     Active   10.30.40.2      10.30.46.254    8.00:00:00                     
+10.30.48.0      255.255.248.0   WiFiB-Yr911    Active   10.30.48.2      10.30.54.254    8.00:00:00                     
+10.30.56.0      255.255.248.0   WIfiB-Yr78     Active   10.30.56.2      10.30.62.254    8.00:00:00                     
+10.30.64.0      255.255.248.0   WiFiB-Guest    Active   10.30.64.2      10.30.70.254    8.00:00:00                     
+10.40.8.0       255.255.248.0   LANC-Trust     Active   10.40.8.2       10.40.14.254    8.00:00:00                     
+10.40.16.0      255.255.248.0   LANC-Untrust   Active   10.40.16.2      10.40.22.254    8.00:00:00                     
+10.40.24.0      255.255.248.0   WiFiC-Trust    Active   10.40.24.2      10.40.30.254    8.00:00:00                     
+10.40.32.0      255.255.248.0   WiFiC-Staff    Active   10.40.32.2      10.40.38.254    8.00:00:00                     
+10.40.40.0      255.255.248.0   WiFiC-Yr12     Active   10.40.40.2      10.40.46.254    8.00:00:00                     
+10.40.48.0      255.255.248.0   WiFiC-Yr911    Active   10.40.48.2      10.40.54.254    8.00:00:00                     
+10.40.56.0      255.255.248.0   WiFiC-Yr78     Active   10.40.56.2      10.40.62.254    8.00:00:00                     
+10.40.64.0      255.255.248.0   WiFiC-Guest    Active   10.40.64.2      10.40.70.254    8.00:00:00                     
+10.50.8.0       255.255.248.0   LAND-Trust     Active   10.50.8.2       10.50.14.254    8.00:00:00                     
+10.50.16.0      255.255.248.0   LAND-Untrust   Active   10.50.16.2      10.50.22.254    8.00:00:00                     
+10.50.24.0      255.255.248.0   WifiD-Trust    Active   10.50.24.2      10.50.30.254    8.00:00:00                     
+10.50.32.0      255.255.248.0   WiFiD-Staff    Active   10.50.32.2      10.50.38.254    8.00:00:00                     
+10.50.40.0      255.255.248.0   WiFiD-Yr12     Active   10.50.40.2      10.50.47.254    8.00:00:00                     
+10.50.48.0      255.255.248.0   WiFiD-Yr911    Active   10.50.48.2      10.50.54.254    8.00:00:00                     
+10.50.56.0      255.255.248.0   WiFID-Yr78     Active   10.50.56.2      10.50.62.254    8.00:00:00                     
+10.50.64.0      255.255.248.0   WiFiD-Guest    Active   10.50.64.2      10.50.71.254    8.00:00:00                     
+
+
+Scope Details
+~~~~~~~~~~~~~
+10.1.160.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.1.160.0       4093            0               0                0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.1.170.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.10.8.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.10.8.0        47              4               7.843137         6               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.10.8.1}                            
+                                      6 DNS Servers                             {10.10.8.11, 10.10.8.10}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.10.8.67           10.10.8.0            00-24-a5-25-b4-46    TCA-iSCSI.CLAREND... Both                               
+10.10.8.41           10.10.8.0            00-0d-a2-01-de-a6    Cview-nas.clarend... Both                               
+10.10.8.206          10.10.8.0            00-06-8e-41-16-5f    EdgeEH400.CLAREND... Both                               
+10.10.8.205          10.10.8.0            00-06-8e-41-15-3d    "FrontGate".CLARE... Both                               
+10.10.8.42           10.10.8.0            00-1d-73-ff-c9-85    TCA-NAS.CLARENDON... Both                 TCA-NAS       
+10.10.8.195          10.10.8.0            c8-22-02-27-cf-95    LocalHost.CLAREND... Both                 DVR IN PREM...
+
+
+10.10.16.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.10.16.0       1728            61              3.409726         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.10.16.1}                           
+                                      4 Time Server                             {10.10.8.10}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     42 NTP Servers                             {10.10.8.10}                           
+                                     51 Lease                                   {691200}                               
+                                    156 IP Phone Boot Server                    {ftpservers=10.10.23.10, country=7, ...
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.10.48.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.10.48.0       1790            0               0                0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.10.48.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.10.56.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.10.56.0       1774            7               0.3930376        7               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.10.56.1}                           
+                                      6 DNS Servers                             {10.10.8.11, 10.10.8.10}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.10.56.10          10.10.56.0           4c-bd-8f-a9-12-5e    NVR1                 Both                 NVR1          
+10.10.56.11          10.10.56.0           4c-bd-8f-dc-90-0d    CAM1                 Dhcp                               
+10.10.56.12          10.10.56.0           4c-bd-8f-dc-90-5f    CAM2                 Dhcp                               
+10.10.56.13          10.10.56.0           4c-bd-8f-dc-90-e4    CAM3                 Dhcp                               
+10.10.56.14          10.10.56.0           4c-bd-8f-dc-90-5a    CAM4                 Dhcp                               
+10.10.56.15          10.10.56.0           4c-bd-8f-dc-90-14    CAM5                 Dhcp                               
+10.10.56.16          10.10.56.0           4c-bd-8f-dc-90-ab    CAM6                 Dhcp                               
+
+
+10.20.0.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.0.0        1722            67              3.745109         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.0.1}                            
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.20.8.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.8.0        1609            180             10.06149         27              0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.8.1}                            
+                                      6 DNS Servers                             {10.10.8.11, 10.10.8.10}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.20.8.18           10.20.8.0            80-ee-73-52-c1-fa    finance-02.CLAREN... Dhcp                               
+10.20.8.4            10.20.8.0            80-ee-73-50-bd-87    Exams-01.CLARENDO... Dhcp                               
+10.20.8.128          10.20.8.0            00-1a-fd-04-e1-fb    EVO_PR1_0319995.C... Dhcp                               
+10.20.15.113         10.20.8.0            00-20-6b-9f-86-60    KM9F8660.CLARENDO... Both                 Printer       
+10.20.15.114         10.20.8.0            00-20-6b-9f-86-38    KM9F8638.CLARENDO... Both                 Printer       
+10.20.15.115         10.20.8.0            00-20-6b-9f-82-df    KM9F82DF.CLARENDO... Both                 Printer       
+10.20.15.100         10.20.8.0            00-20-6b-ab-06-16    KMAB0616.CLARENDO... Both                 Printer       
+10.20.15.112         10.20.8.0            00-20-6b-ab-06-43    KMAB0643.CLARENDO... Both                 Printer       
+10.20.15.109         10.20.8.0            00-20-6b-e2-c0-53    BHC3350-E2C053.CL... Both                 Printer       
+10.20.15.103         10.20.8.0            00-20-6b-e2-c2-6e    BHC3350-E2C26E.CL... Both                 Printer       
+10.20.15.102         10.20.8.0            00-20-6b-e2-c2-9a    BHC3350-E2C29A.CL... Both                 Printer       
+10.20.15.101         10.20.8.0            00-20-6b-a3-2a-b2    KMA32AB2.CLARENDO... Both                 Printer       
+10.20.15.107         10.20.8.0            00-20-6b-e2-c0-74    BHC3350-E2C074.CL... Both                 Printer       
+10.20.15.106         10.20.8.0            00-20-6b-e2-c2-3d    CMF385-1-E2C23D.C... Both                 Printer       
+10.20.15.104         10.20.8.0            00-20-6b-e2-c4-da    BHC3350-E2C4DA.CL... Both                 Printer       
+10.20.15.105         10.20.8.0            00-20-6b-e2-c4-34    BHC3350-E2C434.CL... Both                 Printer       
+10.20.15.116         10.20.8.0            00-20-6b-a3-0c-51    KMA30C51.CLARENDO... Both                 Printer       
+10.20.15.110         10.20.8.0            00-20-6b-a3-2b-05    KMA32B05.CLARENDO... Both                 Printer       
+10.20.15.111         10.20.8.0            00-20-6b-a3-0c-71    KMA30C71.CLARENDO... Both                 Printer       
+10.20.15.108         10.20.8.0            00-20-6b-e2-be-a7    BHC3350-E2BEA7.CL... Both                 Printer       
+10.20.15.121         10.20.8.0            00-21-5a-e1-44-45    NPIE14445.CLAREND... Both                               
+10.20.15.130         10.20.8.0            00-06-8e-41-0e-8c    EdgeEH400.CLAREND... Both                               
+10.20.15.119         10.20.8.0            00-20-6b-e2-bc-f9    BHC3350-E2BCF9.CL... Both                               
+10.20.15.150         10.20.8.0            ac-18-26-20-d0-c5    I1.CLARENDON.LOCAL   Both                               
+10.20.15.162         10.20.8.0            04-75-f5-09-03-ab    ICTOFFICECCTV        Both                               
+10.20.15.165         10.20.8.0            00-1a-a0-2c-2f-e6    SAMEXSI              Both                 SAMEXSI       
+10.20.15.170         10.20.8.0            8c-89-a5-31-87-42    Harry-Office.CLAR... Both                               
+
+
+10.20.16.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.16.0       1707            82              4.583566         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.16.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.20.24.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.24.0       1985            60              2.933985         2               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.24.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.20.24.83          10.20.24.0           9c-b7-0d-89-e2-74    CANTEEN-XIBO.CLAR... Dhcp                               
+10.20.24.67          10.20.24.0           80-3f-5d-19-f5-45    raspberrypi.CLARE... Dhcp                               
+
+
+10.20.32.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.32.0       1710            79              4.415875         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.32.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.20.40.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.40.0       1762            27              1.509223         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.40.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.20.48.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.48.0       1751            38              2.124092         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.48.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.20.56.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.56.0       1779            10              0.5589715        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.56.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.20.64.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.64.0       1789            0               0                0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.64.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.30.8.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.8.0        1758            31              1.732812         2               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.8.1}                            
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.30.15.102         10.30.8.0            00-20-6b-a3-2e-90    KMA32E90.CLARENDO... Both                 Printer       
+10.30.15.100         10.30.8.0            00-20-6b-e2-bd-01    BHC3350-E2BD01.CL... Both                 Printer       
+
+
+10.30.16.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.16.0       1767            22              1.229737         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.16.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.30.24.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.24.0       1756            33              1.844606         1               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.24.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.30.24.67          10.30.24.0           80-3f-5d-19-f5-45    raspberrypi.CLARE... Both                               
+
+
+10.30.32.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.32.0       1749            40              2.235886         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.32.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.30.40.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.40.0       1777            12              0.6707658        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.40.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.30.48.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.48.0       1772            17              0.9502515        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.48.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.30.56.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.56.0       1786            3               0.1676915        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.56.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.30.64.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.64.0       1789            0               0                0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.64.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.40.8.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.8.0        1744            45              2.515372         2               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.8.1}                            
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.40.15.100         10.40.8.0            00-20-6b-a3-2a-fa    KMA32AFA.CLARENDO... Both                 Printer       
+10.40.15.101         10.40.8.0            00-20-6b-a3-2c-44    SENPRINTER.CLAREN... Both                               
+
+
+10.40.16.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.16.0       1789            0               0                0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.16.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.40.24.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.24.0       1764            25              1.397429         1               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.24.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.40.24.67          10.40.24.0           80-3f-5d-19-f5-45    raspberrypi.CLARE... Both                               
+
+
+10.40.32.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.32.0       1758            31              1.732812         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.32.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.40.40.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.40.0       1788            1               0.05589715       0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.40.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.40.48.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.48.0       1774            15              0.8384572        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.48.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.40.56.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.56.0       1786            3               0.1676915        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.56.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.40.64.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.64.0       1789            0               0                0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.64.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.50.8.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.8.0        1709            80              4.471772         17              0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.8.1}                            
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.50.15.53          10.50.8.0            40-6c-8f-1a-14-c8    PA2-MAC-6.CLAREND... Both                 Music Mac 4   
+10.50.15.54          10.50.8.0            40-6c-8f-1a-0f-ca    PR2-MAC-02.CLAREN... Both                 Music Mac 5   
+10.50.15.51          10.50.8.0            40-6c-8f-10-49-e9    Music Mac 2          Both                 Music Mac 2   
+10.50.15.52          10.50.8.0            40-6c-8f-1c-46-72    Music Mac 3          Both                 Music Mac 3   
+10.50.15.61          10.50.8.0            40-6c-8f-0f-89-50    PA1-MAC-02.CLAREN... Both                 Music Mac 12  
+10.50.15.60          10.50.8.0            40-6c-8f-1a-13-c5    Music-8.CLARENDON... Both                 Music Mac 11  
+10.50.15.59          10.50.8.0            40-6c-8f-10-49-6e    Music-15.CLARENDO... Both                 Music Mac 10  
+10.50.15.58          10.50.8.0            40-6c-8f-07-8c-8c    Music-mac7.CLAREN... Both                 Music Mac 9   
+10.50.15.57          10.50.8.0            40-6c-8f-0d-87-fc    Music-101.CLAREND... Both                 Music Mac 8   
+10.50.15.56          10.50.8.0            40-6c-8f-10-4a-f1    Music-6.CLARENDON... Both                 Music Mac 7   
+10.50.15.55          10.50.8.0            40-6c-8f-0f-e9-d9    PR2-MAC-03.CLAREN... Both                 Music Mac 6   
+10.50.15.64          10.50.8.0            40-6c-8f-1a-15-1c    PR2-MAC-01.CLAREN... Both                 Music Mac 14  
+10.50.15.63          10.50.8.0            40-6c-8f-1c-8e-6a    PA1-MAC-03.CLAREN... Both                 Music Mac 13  
+10.50.15.62          10.50.8.0            40-6c-8f-0f-ea-ee    PA1-MAC-01.CLAREN... Both                 Music Mac11   
+10.50.15.101         10.50.8.0            00-20-6b-a3-16-cc    KMA316CC.CLARENDO... Both                 Printer       
+10.50.15.100         10.50.8.0            00-20-6b-a3-0e-b2    KMA30EB2.CLARENDO... Both                 Printer       
+10.50.8.74           10.50.8.0            a4-ee-57-55-b0-5a    EB55B05A.CLARENDO... Dhcp                               
+
+
+10.50.16.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.16.0       1754            35              1.9564           0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.16.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.50.24.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.24.0       1759            30              1.676914         4               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.24.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.50.24.16          10.50.24.0           7c-c3-a1-ac-cf-65    PA2-MAC-6.CLAREND... Dhcp                               
+10.50.24.41          10.50.24.0           7c-c3-a1-ac-cf-6b    PR2-MAC-01.CLAREN... Dhcp                               
+10.50.24.34          10.50.24.0           7c-c3-a1-a9-15-b1    PA1-MAC-02.CLAREN... Dhcp                               
+10.50.24.67          10.50.24.0           80-3f-5d-19-f5-45    raspberrypi.CLARE... Both                               
+
+
+10.50.32.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.32.0       1736            53              2.962549         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.32.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.50.40.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.40.0       1999            46              2.249389         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.40.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.50.48.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.48.0       1773            16              0.8943544        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.48.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.50.56.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.56.0       1780            9               0.5030743        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.56.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.50.64.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.64.0       2042            3               0.1466993        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.64.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+cla-dc1.clarendon.local
+DHCP Server Settings
+~~~~~~~~~~~~~~~~~~~
+
+               IsDomainJoined IsAuthorizedNap                   ConflictDetectionAttempts                    NapEnabled
+               -------------- ---------------                   -------------------------                    ----------
+                         True                                                           0                         False
+
+
+Server Options
+~~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                     81                                         {23}                                   
+
+
+DHCP Scopes
+~~~~~~~~~~~
+There are 38 DHCP Scopes on this server
+
+ScopeId         SubnetMask      Name           State    StartRange      EndRange        LeaseDuration                  
+-------         ----------      ----           -----    ----------      --------        -------------                  
+10.1.160.0      255.255.240.0   Old Network    Active   10.1.160.2      10.1.175.254    8.00:00:00                     
+10.10.8.0       255.255.248.0   Core           Active   10.10.8.100     10.10.8.150     8.00:00:00                     
+10.10.16.0      255.255.248.0   Voice          Active   10.10.16.2      10.10.22.254    8.00:00:00                     
+10.10.48.0      255.255.248.0   Deploy         Active   10.10.48.2      10.10.54.255    8.00:00:00                     
+10.10.56.0      255.255.248.0   CCTV           Active   10.10.56.10     10.10.62.254    8.00:00:00                     
+10.20.0.0       255.255.248.0   WAPS           Active   10.20.0.2       10.20.6.254     8.00:00:00                     
+10.20.8.0       255.255.248.0   LANA-Trust     Active   10.20.8.2       10.20.14.254    8.00:00:00                     
+10.20.16.0      255.255.248.0   LANA-Untrust   Active   10.20.16.2      10.20.22.254    8.00:00:00                     
+10.20.24.0      255.255.248.0   WiFiA-Trust    Active   10.20.24.2      10.20.31.254    8.00:00:00                     
+10.20.32.0      255.255.248.0   WifiA-Staff    Active   10.20.32.2      10.20.38.254    8.00:00:00                     
+10.20.40.0      255.255.248.0   WifiA-Yr12     Active   10.20.40.2      10.20.46.254    8.00:00:00                     
+10.20.48.0      255.255.248.0   WifiA-Yr911    Active   10.20.48.2      10.20.54.254    8.00:00:00                     
+10.20.56.0      255.255.248.0   WifiA-Yr78     Active   10.20.56.2      10.20.62.254    8.00:00:00                     
+10.20.64.0      255.255.248.0   WifiA-Guest    Active   10.20.64.2      10.20.70.254    8.00:00:00                     
+10.30.8.0       255.255.248.0   LANB-Trust     Active   10.30.8.2       10.30.14.254    8.00:00:00                     
+10.30.16.0      255.255.248.0   LANB-Untrust   Active   10.30.16.2      10.30.22.254    8.00:00:00                     
+10.30.24.0      255.255.248.0   WifiB-Trust    Active   10.30.24.2      10.30.30.254    8.00:00:00                     
+10.30.32.0      255.255.248.0   WifiB-Staff    Active   10.30.32.2      10.30.38.254    8.00:00:00                     
+10.30.40.0      255.255.248.0   WiFiB-Yr12     Active   10.30.40.2      10.30.46.254    8.00:00:00                     
+10.30.48.0      255.255.248.0   WiFiB-Yr911    Active   10.30.48.2      10.30.54.254    8.00:00:00                     
+10.30.56.0      255.255.248.0   WIfiB-Yr78     Active   10.30.56.2      10.30.62.254    8.00:00:00                     
+10.30.64.0      255.255.248.0   WiFiB-Guest    Active   10.30.64.2      10.30.70.254    8.00:00:00                     
+10.40.8.0       255.255.248.0   LANC-Trust     Active   10.40.8.2       10.40.14.254    8.00:00:00                     
+10.40.16.0      255.255.248.0   LANC-Untrust   Active   10.40.16.2      10.40.22.254    8.00:00:00                     
+10.40.24.0      255.255.248.0   WiFiC-Trust    Active   10.40.24.2      10.40.30.254    8.00:00:00                     
+10.40.32.0      255.255.248.0   WiFiC-Staff    Active   10.40.32.2      10.40.38.254    8.00:00:00                     
+10.40.40.0      255.255.248.0   WiFiC-Yr12     Active   10.40.40.2      10.40.46.254    8.00:00:00                     
+10.40.48.0      255.255.248.0   WiFiC-Yr911    Active   10.40.48.2      10.40.54.254    8.00:00:00                     
+10.40.56.0      255.255.248.0   WiFiC-Yr78     Active   10.40.56.2      10.40.62.254    8.00:00:00                     
+10.40.64.0      255.255.248.0   WiFiC-Guest    Active   10.40.64.2      10.40.70.254    8.00:00:00                     
+10.50.8.0       255.255.248.0   LAND-Trust     Active   10.50.8.2       10.50.14.254    8.00:00:00                     
+10.50.16.0      255.255.248.0   LAND-Untrust   Active   10.50.16.2      10.50.22.254    8.00:00:00                     
+10.50.24.0      255.255.248.0   WifiD-Trust    Active   10.50.24.2      10.50.30.254    8.00:00:00                     
+10.50.32.0      255.255.248.0   WiFiD-Staff    Active   10.50.32.2      10.50.38.254    8.00:00:00                     
+10.50.40.0      255.255.248.0   WiFiD-Yr12     Active   10.50.40.2      10.50.47.254    8.00:00:00                     
+10.50.48.0      255.255.248.0   WiFiD-Yr911    Active   10.50.48.2      10.50.54.254    8.00:00:00                     
+10.50.56.0      255.255.248.0   WiFID-Yr78     Active   10.50.56.2      10.50.62.254    8.00:00:00                     
+10.50.64.0      255.255.248.0   WiFiD-Guest    Active   10.50.64.2      10.50.71.254    8.00:00:00                     
+
+
+Scope Details
+~~~~~~~~~~~~~
+10.1.160.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.1.160.0       4093            0               0                0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.1.170.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.10.8.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.10.8.0        47              4               7.843137         6               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.10.8.1}                            
+                                      6 DNS Servers                             {10.10.8.11, 10.10.8.10}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.10.8.67           10.10.8.0            00-24-a5-25-b4-46    TCA-iSCSI.CLAREND... Both                               
+10.10.8.41           10.10.8.0            00-0d-a2-01-de-a6    Cview-nas.clarend... Both                               
+10.10.8.206          10.10.8.0            00-06-8e-41-16-5f    EdgeEH400.CLAREND... Both                               
+10.10.8.205          10.10.8.0            00-06-8e-41-15-3d    "FrontGate".CLARE... Both                               
+10.10.8.42           10.10.8.0            00-1d-73-ff-c9-85    TCA-NAS.CLARENDON... Both                 TCA-NAS       
+10.10.8.195          10.10.8.0            c8-22-02-27-cf-95    LocalHost.CLAREND... Both                 DVR IN PREM...
+
+
+10.10.16.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.10.16.0       1728            61              3.409726         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.10.16.1}                           
+                                      4 Time Server                             {10.10.8.10}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     42 NTP Servers                             {10.10.8.10}                           
+                                     51 Lease                                   {691200}                               
+                                    156 IP Phone Boot Server                    {ftpservers=10.10.23.10, country=7, ...
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.10.48.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.10.48.0       1790            0               0                0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.10.48.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.10.56.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.10.56.0       1774            7               0.3930376        7               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.10.56.1}                           
+                                      6 DNS Servers                             {10.10.8.11, 10.10.8.10}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.10.56.10          10.10.56.0           4c-bd-8f-a9-12-5e    NVR1                 Both                 NVR1          
+10.10.56.11          10.10.56.0           4c-bd-8f-dc-90-0d    CAM1                 Dhcp                               
+10.10.56.12          10.10.56.0           4c-bd-8f-dc-90-5f    CAM2                 Dhcp                               
+10.10.56.13          10.10.56.0           4c-bd-8f-dc-90-e4    CAM3                 Dhcp                               
+10.10.56.14          10.10.56.0           4c-bd-8f-dc-90-5a    CAM4                 Dhcp                               
+10.10.56.15          10.10.56.0           4c-bd-8f-dc-90-14    CAM5                 Dhcp                               
+10.10.56.16          10.10.56.0           4c-bd-8f-dc-90-ab    CAM6                 Dhcp                               
+
+
+10.20.0.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.0.0        1722            67              3.745109         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.0.1}                            
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.20.8.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.8.0        1609            180             10.06149         27              0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.8.1}                            
+                                      6 DNS Servers                             {10.10.8.11, 10.10.8.10}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.20.8.18           10.20.8.0            80-ee-73-52-c1-fa    finance-02.CLAREN... Dhcp                               
+10.20.8.4            10.20.8.0            80-ee-73-50-bd-87    Exams-01.CLARENDO... Dhcp                               
+10.20.8.128          10.20.8.0            00-1a-fd-04-e1-fb    EVO_PR1_0319995.C... Dhcp                               
+10.20.15.113         10.20.8.0            00-20-6b-9f-86-60    KM9F8660.CLARENDO... Both                 Printer       
+10.20.15.114         10.20.8.0            00-20-6b-9f-86-38    KM9F8638.CLARENDO... Both                 Printer       
+10.20.15.115         10.20.8.0            00-20-6b-9f-82-df    KM9F82DF.CLARENDO... Both                 Printer       
+10.20.15.100         10.20.8.0            00-20-6b-ab-06-16    KMAB0616.CLARENDO... Both                 Printer       
+10.20.15.112         10.20.8.0            00-20-6b-ab-06-43    KMAB0643.CLARENDO... Both                 Printer       
+10.20.15.109         10.20.8.0            00-20-6b-e2-c0-53    BHC3350-E2C053.CL... Both                 Printer       
+10.20.15.103         10.20.8.0            00-20-6b-e2-c2-6e    BHC3350-E2C26E.CL... Both                 Printer       
+10.20.15.102         10.20.8.0            00-20-6b-e2-c2-9a    BHC3350-E2C29A.CL... Both                 Printer       
+10.20.15.101         10.20.8.0            00-20-6b-a3-2a-b2    KMA32AB2.CLARENDO... Both                 Printer       
+10.20.15.107         10.20.8.0            00-20-6b-e2-c0-74    BHC3350-E2C074.CL... Both                 Printer       
+10.20.15.106         10.20.8.0            00-20-6b-e2-c2-3d    CMF385-1-E2C23D.C... Both                 Printer       
+10.20.15.104         10.20.8.0            00-20-6b-e2-c4-da    BHC3350-E2C4DA.CL... Both                 Printer       
+10.20.15.105         10.20.8.0            00-20-6b-e2-c4-34    BHC3350-E2C434.CL... Both                 Printer       
+10.20.15.116         10.20.8.0            00-20-6b-a3-0c-51    KMA30C51.CLARENDO... Both                 Printer       
+10.20.15.110         10.20.8.0            00-20-6b-a3-2b-05    KMA32B05.CLARENDO... Both                 Printer       
+10.20.15.111         10.20.8.0            00-20-6b-a3-0c-71    KMA30C71.CLARENDO... Both                 Printer       
+10.20.15.108         10.20.8.0            00-20-6b-e2-be-a7    BHC3350-E2BEA7.CL... Both                 Printer       
+10.20.15.121         10.20.8.0            00-21-5a-e1-44-45    NPIE14445.CLAREND... Both                               
+10.20.15.130         10.20.8.0            00-06-8e-41-0e-8c    EdgeEH400.CLAREND... Both                               
+10.20.15.119         10.20.8.0            00-20-6b-e2-bc-f9    BHC3350-E2BCF9.CL... Both                               
+10.20.15.150         10.20.8.0            ac-18-26-20-d0-c5    I1.CLARENDON.LOCAL   Both                               
+10.20.15.162         10.20.8.0            04-75-f5-09-03-ab    ICTOFFICECCTV        Both                               
+10.20.15.165         10.20.8.0            00-1a-a0-2c-2f-e6    SAMEXSI              Both                 SAMEXSI       
+10.20.15.170         10.20.8.0            8c-89-a5-31-87-42    Harry-Office.CLAR... Both                               
+
+
+10.20.16.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.16.0       1707            82              4.583566         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.16.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.20.24.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.24.0       1985            60              2.933985         2               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.24.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.20.24.83          10.20.24.0           9c-b7-0d-89-e2-74    CANTEEN-XIBO.CLAR... Dhcp                               
+10.20.24.67          10.20.24.0           80-3f-5d-19-f5-45    raspberrypi.CLARE... Dhcp                               
+
+
+10.20.32.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.32.0       1710            79              4.415875         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.32.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.20.40.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.40.0       1762            27              1.509223         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.40.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.20.48.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.48.0       1751            38              2.124092         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.48.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.20.56.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.56.0       1779            10              0.5589715        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.56.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.20.64.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.20.64.0       1789            0               0                0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.20.64.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.30.8.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.8.0        1758            31              1.732812         2               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.8.1}                            
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.30.15.102         10.30.8.0            00-20-6b-a3-2e-90    KMA32E90.CLARENDO... Both                 Printer       
+10.30.15.100         10.30.8.0            00-20-6b-e2-bd-01    BHC3350-E2BD01.CL... Both                 Printer       
+
+
+10.30.16.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.16.0       1767            22              1.229737         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.16.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.30.24.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.24.0       1756            33              1.844606         1               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.24.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.30.24.67          10.30.24.0           80-3f-5d-19-f5-45    raspberrypi.CLARE... Both                               
+
+
+10.30.32.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.32.0       1749            40              2.235886         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.32.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.30.40.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.40.0       1777            12              0.6707658        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.40.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.30.48.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.48.0       1772            17              0.9502515        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.48.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.30.56.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.56.0       1786            3               0.1676915        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.56.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.30.64.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.30.64.0       1789            0               0                0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.30.64.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.40.8.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.8.0        1744            45              2.515372         2               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.8.1}                            
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.40.15.100         10.40.8.0            00-20-6b-a3-2a-fa    KMA32AFA.CLARENDO... Both                 Printer       
+10.40.15.101         10.40.8.0            00-20-6b-a3-2c-44    SENPRINTER.CLAREN... Both                               
+
+
+10.40.16.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.16.0       1789            0               0                0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.16.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.40.24.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.24.0       1764            25              1.397429         1               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.24.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.40.24.67          10.40.24.0           80-3f-5d-19-f5-45    raspberrypi.CLARE... Both                               
+
+
+10.40.32.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.32.0       1758            31              1.732812         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.32.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.40.40.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.40.0       1788            1               0.05589715       0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.40.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.40.48.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.48.0       1774            15              0.8384572        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.48.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.40.56.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.56.0       1786            3               0.1676915        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.56.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.40.64.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.40.64.0       1789            0               0                0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.40.64.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.50.8.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.8.0        1709            80              4.471772         17              0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.8.1}                            
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.50.15.53          10.50.8.0            40-6c-8f-1a-14-c8    PA2-MAC-6.CLAREND... Both                 Music Mac 4   
+10.50.15.54          10.50.8.0            40-6c-8f-1a-0f-ca    PR2-MAC-02.CLAREN... Both                 Music Mac 5   
+10.50.15.51          10.50.8.0            40-6c-8f-10-49-e9    Music Mac 2          Both                 Music Mac 2   
+10.50.15.52          10.50.8.0            40-6c-8f-1c-46-72    Music Mac 3          Both                 Music Mac 3   
+10.50.15.61          10.50.8.0            40-6c-8f-0f-89-50    PA1-MAC-02.CLAREN... Both                 Music Mac 12  
+10.50.15.60          10.50.8.0            40-6c-8f-1a-13-c5    Music-8.CLARENDON... Both                 Music Mac 11  
+10.50.15.59          10.50.8.0            40-6c-8f-10-49-6e    Music-15.CLARENDO... Both                 Music Mac 10  
+10.50.15.58          10.50.8.0            40-6c-8f-07-8c-8c    Music-mac7.CLAREN... Both                 Music Mac 9   
+10.50.15.57          10.50.8.0            40-6c-8f-0d-87-fc    Music-101.CLAREND... Both                 Music Mac 8   
+10.50.15.56          10.50.8.0            40-6c-8f-10-4a-f1    Music-6.CLARENDON... Both                 Music Mac 7   
+10.50.15.55          10.50.8.0            40-6c-8f-0f-e9-d9    PR2-MAC-03.CLAREN... Both                 Music Mac 6   
+10.50.15.64          10.50.8.0            40-6c-8f-1a-15-1c    PR2-MAC-01.CLAREN... Both                 Music Mac 14  
+10.50.15.63          10.50.8.0            40-6c-8f-1c-8e-6a    PA1-MAC-03.CLAREN... Both                 Music Mac 13  
+10.50.15.62          10.50.8.0            40-6c-8f-0f-ea-ee    PA1-MAC-01.CLAREN... Both                 Music Mac11   
+10.50.15.101         10.50.8.0            00-20-6b-a3-16-cc    KMA316CC.CLARENDO... Both                 Printer       
+10.50.15.100         10.50.8.0            00-20-6b-a3-0e-b2    KMA30EB2.CLARENDO... Both                 Printer       
+10.50.8.74           10.50.8.0            a4-ee-57-55-b0-5a    EB55B05A.CLARENDO... Dhcp                               
+
+
+10.50.16.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.16.0       1754            35              1.9564           0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.16.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.50.24.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.24.0       1759            30              1.676914         4               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.24.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description   
+---------            -------              --------             ----                 ----                 -----------   
+10.50.24.16          10.50.24.0           7c-c3-a1-ac-cf-65    PA2-MAC-6.CLAREND... Dhcp                               
+10.50.24.41          10.50.24.0           7c-c3-a1-ac-cf-6b    PR2-MAC-01.CLAREN... Dhcp                               
+10.50.24.34          10.50.24.0           7c-c3-a1-a9-15-b1    PA1-MAC-02.CLAREN... Dhcp                               
+10.50.24.67          10.50.24.0           80-3f-5d-19-f5-45    raspberrypi.CLARE... Both                               
+
+
+10.50.32.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.32.0       1736            53              2.962549         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.32.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.50.40.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.40.0       1999            46              2.249389         0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.40.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.50.48.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.48.0       1773            16              0.8943544        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.48.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.50.56.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.56.0       1780            9               0.5030743        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.56.1}                           
+                                      6 DNS Servers                             {10.10.8.10, 10.10.8.11}               
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~
+10.50.64.0
+Scope Stats
+~~~~~~~~~~~
+
+ScopeId          Free            InUse           PercentageInUse  Reserved        Pending         SuperscopeName 
+-------          ----            -----           ---------------  --------        -------         -------------- 
+10.50.64.0       2042            3               0.1466993        0               0                              
+
+
+Scope Options
+~~~~~~~~~~~~~
+
+                               OptionId Name                                    Value                                  
+                               -------- ----                                    -----                                  
+                                      3 Router                                  {10.50.64.1}                           
+                                      6 DNS Servers                             {194.168.4.123, 194.168.8.123}         
+                                     15 DNS Domain Name                         {CLARENDON.LOCAL}                      
+                                     51 Lease                                   {691200}                               
+
+
+Exclusions
+~~~~~~~~~~
+Reservations
+~~~~~~~~~~~~

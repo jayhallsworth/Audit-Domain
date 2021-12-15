@@ -36,7 +36,7 @@
 	 - Get-NoSettingsGPO.ps1
 	 - Get-ServerDNS.ps1
 	 - Get-UnlinkedGPO.ps1
-	 - OtherDNS-servers.txt
+	 - OtherDNS-servers.txt - Add hostnames or IP Addresses of other DNS Servers in the organisation
 
 
 

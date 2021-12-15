@@ -1,0 +1,26 @@
+
+#LastLogonDate
+#get-aduser -properties * -Filter (LastLogonDate -ge (get-date() )
+
+(get-aduser -f * -pr lastlogondate|sort -property lastlogondate|ft samaccountname,lastlogondate -auto).count
+
+#(search-adaccount -accountinactive -usersonly -timespan "90" | FT SamAccountName, lastlogondate).count
+
+get-help Search-ADAccount -Examples
+
+$InactiveUsers = (Get-ADUser -Filter * -Properties Enabled, AccountExpirationDate, LastLogonDate | ? { ($_.Enabled -EQ $False) -OR `
+($_.AccountExpirationDate -NE $NULL -AND $_.AccountExpirationDate -LT (Get-Date)) -OR `
+($_.LastLogonDate -NE $NULL -AND $_.LastLogonDate -LT (Get-Date).AddDays(-90)) } | FT SamAccountName, LastLogonDate)
+
+$InactiveUsers.count
+
+(Get-ADUser -properties * -Filter * | Where-Object {$_.SamAccountName -ne $InactiveUsers.SamAccountName} | FT SamAccountName, HomeDirectory, HomeDrive, ProfilePath).count
+
+
+
+(Get-ADUser -properties * -Filter * | Where-Object {$_.SamAccountName -ne $InactiveUsers.SamAccountName} | FT SamAccountName, HomeDirectory, HomeDrive, ProfilePath).count
+
+(search-adaccount -usersonly).count
+
+
+Get-ADUser -properties * -Filter * | Where-Object {$_.SamAccountName -ne $InactiveUsers.SamAccountName} | FT SamAccountName, HomeDirectory, HomeDrive, ProfilePath -AutoSize | Out-File $PWD\AD_Notes.txt -NoClobber -Append

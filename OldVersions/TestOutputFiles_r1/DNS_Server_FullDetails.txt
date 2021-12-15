@@ -1,0 +1,359 @@
+
+ServerSetting:
+==============
+
+EnableOnlineSigning                                     True                                    
+TcpReceivePacketSize                                    65536                                   
+WriteAuthorityNs                                        False                                   
+SocketPoolSize                                          2500                                    
+AppendMsZoneTransferTag                                 False                                   
+NameCheckFlag                                           2                                       
+UpdateOptions                                           783                                     
+MaximumTrustAnchorActiveRefreshInterval                 15.00:00:00                             
+EnableIPv6                                              True                                    
+RpcProtocol                                             5                                       
+ForestDirectoryPartitionBaseName                        ForestDnsZones                          
+AutoCreateDelegation                                    2                                       
+EnableDirectoryPartitions                               True                                    
+SelfTest                                                4294967295                              
+DsAvailable                                             True                                    
+EnableSendErrorSuppression                              True                                    
+SilentlyIgnoreCNameUpdateConflicts                      False                                   
+EnableDuplicateQuerySuppression                         True                                    
+DomainDirectoryPartitionBaseName                        DomainDnsZones                          
+ReloadException                                         False                                   
+AdminConfigured                                         True                                    
+StrictFileParsing                                       False                                   
+AllowCNameAtNs                                          True                                    
+MaximumSignatureScanPeriod                              2.00:00:00                              
+IsReadOnlyDC                                            False                                   
+DisableAutoReverseZone                                  False                                   
+AllIPAddress                                            {10.10.8.10}                            
+EnableUpdateForwarding                                  False                                   
+DeleteOutsideGlue                                       False                                   
+MinorVersion                                            2                                       
+MajorVersion                                            6                                       
+LocalNetPriority                                        True                                    
+MaxResourceRecordsInNonSecureUpdate                     30                                      
+ComputerName                                            CLA-DC1.CLARENDON.LOCAL                 
+RemoteIPv4RankBoost                                     5                                       
+EnableWinsR                                             True                                    
+NoUpdateDelegations                                     False                                   
+LameDelegationTtl                                       00:00:00                                
+SocketPoolExcludedPortRanges                            {}                                      
+EnableRsoForRodc                                        True                                    
+AllowUpdate                                             True                                    
+ListeningIPAddress                                      {10.10.8.10}                            
+MaximumUdpPacketSize                                    4000                                    
+XfrConnectTimeout                                       30                                      
+OpenAclOnProxyUpdates                                   True                                    
+EnableIQueryResponseGeneration                          False                                   
+RoundRobin                                              True                                    
+AutoConfigFileZones                                     1                                       
+SendPort                                                0                                       
+MaximumRodcRsoQueueLength                               300                                     
+RemoteIPv6RankBoost                                     0                                       
+AutoCacheUpdate                                         False                                   
+LooseWildcarding                                        False                                   
+BootMethod                                              3                                       
+EnableVersionQuery                                      0                                       
+BuildNumber                                             9200                                    
+AllowReadOnlyZoneTransfer                               False                                   
+BindSecondaries                                         False                                   
+SyncDsZoneSerial                                        2                                       
+MaximumRodcRsoAttemptsPerCycle                          100                                     
+LocalNetPriorityMask                                    255                                     
+QuietRecvFaultInterval                                  0                                       
+EnableDnsSec                                            True                                    
+ForwardDelegations                                      False                                   
+QuietRecvLogInterval                                    0                                       
+XfrThrottleMultiplier                                   10                                      
+AddressAnswerLimit                                      0                                       
+PublishAutoNet                                          False                                   
+
+
+ServerDsSetting:
+===============
+
+MinimumBackgroundLoadThreads                            1                                       
+RemoteReplicationDelay                                  30                                      
+LazyUpdateInterval                                      3                                       
+PollingInterval                                         180                                     
+DirectoryPartitionAutoEnlistInterval                    1.00:00:00                              
+TombstoneInterval                                       14.00:00:00                             
+
+
+ServerScavenging:
+===============
+
+ScavengingState                                         False                                   
+RefreshInterval                                         7.00:00:00                              
+NoRefreshInterval                                       7.00:00:00                              
+ScavengingInterval                                      4.00:00:00                              
+LastScavengeTime                                        07/03/2019 10:35:58                     
+
+
+ServerRecursion:
+===============
+
+AdditionalTimeout                                       4                                       
+SecureResponse                                          True                                    
+Enable                                                  True                                    
+Timeout                                                 8                                       
+RetryInterval                                           3                                       
+
+
+ServerDiagnostics:
+===============
+
+SendPackets                                             False                                   
+UdpPackets                                              False                                   
+EnableLoggingForZoneLoadingEvent                        False                                   
+Update                                                  False                                   
+Answers                                                 False                                   
+EnableLogFileRollover                                   False                                   
+UnmatchedResponse                                       False                                   
+EnableLoggingForRemoteServerEvent                       False                                   
+EnableLoggingForServerStartStopEvent                    False                                   
+TcpPackets                                              False                                   
+EventLogLevel                                           4                                       
+EnableLoggingForPluginDllEvent                          False                                   
+EnableLoggingForTombstoneEvent                          False                                   
+FullPackets                                             False                                   
+UseSystemEventLog                                       False                                   
+Notifications                                           False                                   
+EnableLoggingToFile                                     True                                    
+EnableLoggingForLocalLookupEvent                        False                                   
+SaveLogsToPersistentStorage                             False                                   
+ReceivePackets                                          False                                   
+Queries                                                 False                                   
+EnableLoggingForZoneDataWriteEvent                      False                                   
+QuestionTransactions                                    False                                   
+FilterIPAddressList                                     {}                                      
+EnableLoggingForRecursiveLookupEvent                    False                                   
+WriteThrough                                            False                                   
+MaxMBFileSize                                           500000000                               
+
+
+ServerGlobalNameZone:
+===============
+
+Enable                                                  False                                   
+GlobalOverLocal                                         False                                   
+SendTimeout                                             3                                       
+AlwaysQueryServer                                       False                                   
+ServerQueryInterval                                     06:00:00                                
+EnableEDnsProbes                                        True                                    
+PreferAaaa                                              False                                   
+BlockUpdates                                            True                                    
+
+
+ServerCache:
+===============
+
+IsReverseLookupZone                                     False                                   
+IsDsIntegrated                                          True                                    
+IsReadOnly                                              False                                   
+MaxNegativeTtl                                          00:15:00                                
+ZoneName                                                .                                       
+MaxTtl                                                  1.00:00:00                              
+StoreEmptyAuthenticationResponse                        True                                    
+ZoneType                                                Cache                                   
+IsPaused                                                False                                   
+IsShutdown                                              False                                   
+DistinguishedName                                       DC=RootDNSServers,cn=MicrosoftDNS,DC=...
+EnablePollutionProtection                               True                                    
+LockingPercent                                          100                                     
+MaxKBSize                                               0                                       
+IsAutoCreated                                           False                                   
+
+
+ServerGlobalQueryBlockList:
+===============
+
+Enable                                                  True                                    
+List                                                    {wpad, isatap}                          
+
+
+ServerEdns:
+===============
+
+EnableProbes                                            True                                    
+CacheTimeout                                            00:15:00                                
+EnableReception                                         True                                    
+
+
+ServerForwarder:
+===============
+
+ReorderedIPAddress                                      {194.168.4.123, 194.168.8.123}          
+EnableReordering                                        True                                    
+Timeout                                                 3                                       
+UseRootHint                                             True                                    
+IPAddress                                               {194.168.4.123, 194.168.8.123}          
+
+
+ServerRootHint:
+===============
+
+NameServer                                                  IPAddress                                                  
+----------                                                  ---------                                                  
+m.root-servers.net.                                         202.12.27.33                                               
+l.root-servers.net.                                         199.7.83.42                                                
+k.root-servers.net.                                         193.0.14.129                                               
+j.root-servers.net.                                         192.58.128.30                                              
+i.root-servers.net.                                         192.36.148.17                                              
+h.root-servers.net.                                         128.63.2.53                                                
+g.root-servers.net.                                         192.112.36.4                                               
+f.root-servers.net.                                         192.5.5.241                                                
+e.root-servers.net.                                         192.203.230.10                                             
+d.root-servers.net.                                         128.8.10.90                                                
+c.root-servers.net.                                         192.33.4.12                                                
+b.root-servers.net.                                         192.228.79.201                                             
+a.root-servers.net.                                         198.41.0.4                                                 
+
+
+ServerZone:
+===============
+
+ZoneName                            ZoneType        IsAutoCreated   IsDsIntegrated  IsReverseLookupZone  IsSigned      
+--------                            --------        -------------   --------------  -------------------  --------      
+_msdcs.CLARENDON.LOCAL              Primary         False           True            False                False         
+0.in-addr.arpa                      Primary         True            False           True                 False         
+10.10.in-addr.arpa                  Primary         False           True            True                 False         
+127.in-addr.arpa                    Primary         True            False           True                 False         
+255.in-addr.arpa                    Primary         True            False           True                 False         
+8.40.10.in-addr.arpa                Primary         False           True            True                 False         
+CLARENDON.LOCAL                     Primary         False           True            False                False         
+clarendonacademy.com                Primary         False           True            False                False         
+m.youtube.com                       Primary         False           True            False                False         
+TrustAnchors                        Primary         False           True            False                False         
+www.bing.com                        Primary         False           True            False                False         
+www.google.co.uk                    Primary         False           True            False                False         
+www.youtube.com                     Primary         False           True            False                False         
+www.youtube-nocookie.com            Primary         False           True            False                False         
+youtube.googleapis.com              Primary         False           True            False                False         
+youtubei.googleapis.com             Primary         False           True            False                False         
+
+
+ServerZoneAging:
+===============
+
+
+ZoneName             : _msdcs.CLARENDON.LOCAL
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+ZoneName             : 0.in-addr.arpa
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+ZoneName             : 10.10.in-addr.arpa
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+ZoneName             : 127.in-addr.arpa
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+ZoneName             : 255.in-addr.arpa
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+ZoneName             : 8.40.10.in-addr.arpa
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+ZoneName             : CLARENDON.LOCAL
+AgingEnabled         : True
+AvailForScavengeTime : 11/03/2019 09:00:00
+RefreshInterval      : 1.00:00:00
+NoRefreshInterval    : 1.00:00:00
+ScavengeServers      : 
+
+ZoneName             : clarendonacademy.com
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+ZoneName             : m.youtube.com
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+ZoneName             : TrustAnchors
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+ZoneName             : www.bing.com
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+ZoneName             : www.google.co.uk
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+ZoneName             : www.youtube.com
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+ZoneName             : www.youtube-nocookie.com
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+ZoneName             : youtube.googleapis.com
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+ZoneName             : youtubei.googleapis.com
+AgingEnabled         : False
+AvailForScavengeTime : 
+RefreshInterval      : 7.00:00:00
+NoRefreshInterval    : 7.00:00:00
+ScavengeServers      : 
+
+
+
+
+
+

@@ -1,0 +1,222 @@
+
+Name                                      GroupCategory  GroupScope
+----                                      -------------  ----------
+Domain Computers                               Security      Global
+Domain Controllers                             Security      Global
+Domain Admins                                  Security      Global
+Domain Users                                   Security      Global
+Domain Guests                                  Security      Global
+Group Policy Creator Owners                    Security      Global
+Read-only Domain Controllers                   Security      Global
+Cloneable Domain Controllers                   Security      Global
+DnsUpdateProxy                                 Security      Global
+Exchange Install Domain Servers                Security      Global
+All Staff                                      Security      Global
+All Teachers                                   Security      Global
+All Non Teaching                               Security      Global
+Student Home full                              Security      Global
+Student Home Read                              Security      Global
+Intake-10                                      Security      Global
+Intake-11                                      Security      Global
+Intake-12                                      Security      Global
+Intake-13                                      Security      Global
+SLT                                            Security      Global
+Managerment                                    Security      Global
+Admin-group                                    Security      Global
+Teaching-group                                 Security      Global
+Finance-group                                  Security      Global
+MAC.Trusted.Devices                            Security      Global
+Year 12                                        Security      Global
+Year 9-11                                      Security      Global
+Year 7-8                                       Security      Global
+Accounts                                       Security      Global
+ICT Department                                 Security      Global
+Facility                                       Security      Global
+Exams-Group                                    Security      Global
+ICT                                            Security      Global
+6th Form Admin                                 Security      Global
+sophos-admin                                   Security      Global
+Resouces-Group                                 Security      Global
+All students                                   Security      Global
+Control ass global drama                       Security      Global
+LIL Humanaities                                Security      Global
+control ass drama ali                          Security      Global
+Internet test                                  Security      Global
+Hap.administrators                             Security      Global
+Hap Staff                                      Security      Global
+Staff internet                                 Security      Global
+Sophos PureMessage Administrators              Security      Global
+no internet                                    Security      Global
+CA Yr 9 Drama Students AMW                     Security      Global
+CA Yr 10 Drama Students AMW                    Security      Global
+STU-exams                                      Security      Global
+test-group                                     Security      Global
+exam                                           Security      Global
+Intake-14                                      Security      Global
+drama-video-share                              Security      Global
+user drives                                    Security      Global
+drama-photo-share                              Security      Global
+full internet                                  Security      Global
+HAP-BOOKING                                    Security      Global
+CCTV                                           Security      Global
+Sixth Form Media                               Security      Global
+CA Yr 11 Dance Students LEH                    Security      Global
+AXS-MUSIC                                      Security      Global
+11D-Mu-AXS                                     Security      Global
+SophosDomainUser                               Security      Global
+SophosDomainPowerUser                          Security      Global
+SophosDomainAdministrator                      Security      Global
+Intake-15                                      Security      Global
+CLA-Guests                                     Security      Global
+Apprentices                                    Security      Global
+cash-office                                    Security      Global
+Data-Group                                     Security      Global
+LIL-Group                                      Security      Global
+SLT-Group                                      Security      Global
+Document redirection                           Security      Global
+ADR-LT-ADMIN                                   Security      Global
+Exam No SpellCheck                             Security      Global
+Year 11 BTEC Dance 2016                        Security      Global
+Year 11 BTEC Dance 2016 Students               Security      Global
+Intake-16                                      Security      Global
+SvcMgrAdmin                                    Security      Global
+EdgeManagerRead                                Security      Global
+EdgeManagerWrite                               Security      Global
+EdgeManagerOperate                             Security      Global
+EdgeManagerCreate                              Security      Global
+EdgeManagerEditVisitor                         Security      Global
+Main Entrance                                  Security      Global
+MAIN GATE                                      Security      Global
+Test                                           Security      Global
+All the time                                   Security      Global
+EdgeConnectAdmin                               Security      Global
+Sixth Form                                     Security      Global
+School Hours Only                              Security      Global
+All Sixth Form                                 Security      Global
+Sixth Form Reg                                 Security      Global
+Sixthform-in                                   Security      Global
+Sixthform-out                                  Security      Global
+Out-of-school                                  Security      Global
+Main-Gate-Out                                  Security      Global
+Main-Gate-in                                   Security      Global
+SCSMadmins                                     Security      Global
+IT-ADMIN-FOLDERS                               Security      Global
+Exam-Users                                     Security      Global
+History Coursework RWM                         Security      Global
+Histroy course work                            Security      Global
+12B-AB                                         Security      Global
+12B-AB Students                                Security      Global
+Lass Admin                                     Security      Global
+Rapid Admin                                    Security      Global
+Year 11 Controlled Assement 2017               Security      Global
+Year 11 Controlled Assement 2017 Students      Security      Global
+MAC.Projectors                                 Security      Global
+Intake-17                                      Security      Global
+CabinetGRP                                     Security      Global
+front gate                                     Security      Global
+6th form reg                                   Security      Global
+JOG 6th                                        Security      Global
+Library Staff                                  Security      Global
+Library Students                               Security      Global
+Library-door                                   Security      Global
+Computer Science RB                            Security      Global
+Controlled Assesment                           Security      Global
+CS2017-18                                      Security      Global
+It Teachers                                    Security      Global
+Timetable                                      Security      Global
+ExamsA2C                                       Security      Global
+OWA USERS                                      Security      Global
+Staff Roam                                     Security      Global
+SIMSUsers                                      Security      Global
+SIMSCensus                                     Security      Global
+SIMSSWC                                        Security      Global
+SIMSCTF                                        Security      Global
+Personnel                                      Security      Global
+DirectAccessClient                             Security      Global
+PGCE                                           Security      Global
+Access All Areas                               Security      Global
+KS5 Business Coursework                        Security      Global
+Y12 Applied Business                           Security      Global
+Y13 Applied Business                           Security      Global
+KS5 Business Teachers                          Security      Global
+TEST RD                                        Security      Global
+Safeguarding                                   Security      Global
+Dance CA 2017-18                               Security      Global
+Y13DA2017-18                                   Security      Global
+Left Users                                     Security      Global
+Weekend                                        Security      Global
+Weekend Lettings                               Security      Global
+Intake-18                                      Security      Global
+AcornHR                                        Security      Global
+Acorn                                          Security      Global
+365 Students                                   Security      Global
+RD Users                                       Security      Global
+W10 Laptops                                    Security      Global
+CAGovernors                                    Security      Global
+WinRMRemoteWMIUsers__                          Security DomainLocal
+Cert Publishers                                Security DomainLocal
+RAS and IAS Servers                            Security DomainLocal
+Allowed RODC Password Replication Group        Security DomainLocal
+Denied RODC Password Replication Group         Security DomainLocal
+DnsAdmins                                      Security DomainLocal
+DHCP Users                                     Security DomainLocal
+DHCP Administrators                            Security DomainLocal
+ContentSubmitters                              Security DomainLocal
+VPNUsers                                       Security DomainLocal
+ConfigMgr Remote Control Users                 Security DomainLocal
+SophosAdministrator                            Security DomainLocal
+SophosPowerUser                                Security DomainLocal
+SophosUser                                     Security DomainLocal
+SophosOnAccess                                 Security DomainLocal
+Administrators                                 Security DomainLocal
+Users                                          Security DomainLocal
+Guests                                         Security DomainLocal
+Print Operators                                Security DomainLocal
+Backup Operators                               Security DomainLocal
+Replicator                                     Security DomainLocal
+Remote Desktop Users                           Security DomainLocal
+Network Configuration Operators                Security DomainLocal
+Performance Monitor Users                      Security DomainLocal
+Performance Log Users                          Security DomainLocal
+Distributed COM Users                          Security DomainLocal
+IIS_IUSRS                                      Security DomainLocal
+Cryptographic Operators                        Security DomainLocal
+Event Log Readers                              Security DomainLocal
+Certificate Service DCOM Access                Security DomainLocal
+RDS Remote Access Servers                      Security DomainLocal
+RDS Endpoint Servers                           Security DomainLocal
+RDS Management Servers                         Security DomainLocal
+Hyper-V Administrators                         Security DomainLocal
+Access Control Assistance Operators            Security DomainLocal
+Remote Management Users                        Security DomainLocal
+Server Operators                               Security DomainLocal
+Account Operators                              Security DomainLocal
+Pre-Windows 2000 Compatible Access             Security DomainLocal
+Incoming Forest Trust Builders                 Security DomainLocal
+Windows Authorization Access Group             Security DomainLocal
+Terminal Server License Servers                Security DomainLocal
+Schema Admins                                  Security   Universal
+Enterprise Admins                              Security   Universal
+Enterprise Read-only Domain Controllers        Security   Universal
+Organization Management                        Security   Universal
+Recipient Management                           Security   Universal
+View-Only Organization Management              Security   Universal
+Public Folder Management                       Security   Universal
+UM Management                                  Security   Universal
+Help Desk                                      Security   Universal
+Records Management                             Security   Universal
+Discovery Management                           Security   Universal
+Server Management                              Security   Universal
+Delegated Setup                                Security   Universal
+Hygiene Management                             Security   Universal
+Compliance Management                          Security   Universal
+Exchange Servers                               Security   Universal
+Exchange Trusted Subsystem                     Security   Universal
+Exchange Windows Permissions                   Security   Universal
+ExchangeLegacyInterop                          Security   Universal
+Managed Availability Servers                   Security   Universal
+CPDsc                                          Security   Universal
+Calendar                                       Security   Universal
+Application Impersonation                      Security   Universal
+
+

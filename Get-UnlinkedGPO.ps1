@@ -10,11 +10,11 @@ function IsNotLinked($xmldata){
 
 $unlinkedGPOs = @()
 
-Get-GPO -All | ForEach { $gpo = $_ ; $_ | Get-GPOReport -ReportType xml | ForEach { If(IsNotLinked([xml]$_)){$unlinkedGPOs += $gpo} }}
+Get-GPO -All | ForEach-Object { $gpo = $_ ; $_ | Get-GPOReport -ReportType xml | ForEach-Object { If(IsNotLinked([xml]$_)){$unlinkedGPOs += $gpo} }}
 
 If ($unlinkedGPOs.Count -eq 0) {
     "No Unlinked GPO's Found"
 }
 Else{
-    $unlinkedGPOs | Select DisplayName,ID | ft
+    $unlinkedGPOs | Select-Object DisplayName,ID | Select-Object
 }

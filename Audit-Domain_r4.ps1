@@ -138,7 +138,7 @@ write-host " "
 
 
 $DHCPServer = Get-Service | where-object { $_.Name -like "*DHCPServer*" }
-if ($DHCPServer -eq $Null) { $IsDHCPServer = $False } else { $IsDHCPServer = $True }
+if ($Null -eq $DHCPServer) { $IsDHCPServer = $False } else { $IsDHCPServer = $True }
 
 If ($IsDHCPServer -eq $True) {
 
@@ -309,7 +309,7 @@ Add-Content $OutputFile " "
 Add-Content $OutputFile "Trusts"
 Add-Content $OutputFile "------"
 $Trusts = Get-ADTrust -Filter *
- if ($Trusts -eq $null) {Add-Content $OutputFile "There Are No Trusts"} else {$Trusts | Select-Object * | Out-File $OutputFile -NoClobber -Append -Encoding ascii}
+ if ($null -eq $Trusts) {Add-Content $OutputFile "There Are No Trusts"} else {$Trusts | Select-Object * | Out-File $OutputFile -NoClobber -Append -Encoding ascii}
 
 
 
@@ -317,7 +317,7 @@ Add-Content $OutputFile " "
 Add-Content $OutputFile "Fine Grain Password Policy"
 Add-Content $OutputFile "--------------------------"
 $FGPP = Get-ADFineGrainedPasswordPolicy -Filter *
- if ($FGPP -eq $null) {Add-Content $OutputFile "There Are No Fine Grain Password Policies"} else {$FGPP | Select-Object * | Out-File $OutputFile -NoClobber -Append -Encoding ascii}
+ if ($null -eq $FGPP) {Add-Content $OutputFile "There Are No Fine Grain Password Policies"} else {$FGPP | Select-Object * | Out-File $OutputFile -NoClobber -Append -Encoding ascii}
 
 
 
@@ -612,7 +612,7 @@ Add-Content $OutputFile "~~~~~~~~~~~~~~~     DHCP Server Settings     ~~~~~~~~~~
 Add-Content $OutputFile "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
 $DHCPServer = Get-Service | where-object { $_.Name -like "*DHCPServer*" }
-if ($DHCPServer -eq $Null) { $IsDHCPServer = $False } else { $IsDHCPServer = $True }
+if ($Null -eq $DHCPServer) { $IsDHCPServer = $False } else { $IsDHCPServer = $True }
 
 If ($IsDHCPServer -eq $True) {
 

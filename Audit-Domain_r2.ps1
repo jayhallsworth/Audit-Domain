@@ -192,10 +192,7 @@ write-host " "
 #Get-UnlinkedGPO.ps1 - https://gallery.technet.microsoft.com/Get-Unlinked-Group-Policy-4dda4aa3 
 #Get-NoSettingsGPO.ps1 - https://gallery.technet.microsoft.com/Get-Group-Policy-Objects-baaf5f61 
 #Get-ServerDNS.ps1 - From Jay
-#
-
-
-
+#OtherDNS-servers.txt - Create / Edit a list of DNS Servers
 
 #This script needs Get-UnlinkedGPO.ps1 in the same folder
 # - https://gallery.technet.microsoft.com/Get-Unlinked-Group-Policy-4dda4aa3  
@@ -207,9 +204,6 @@ write-host "https://gallery.technet.microsoft.com/Get-Unlinked-Group-Policy-4dda
 pause
 exit
 }
-
-
-
 
 #This script needs Get-NoSettingsGPO.ps1 in the same folder
 # - https://gallery.technet.microsoft.com/Get-Group-Policy-Objects-baaf5f61 
@@ -224,19 +218,19 @@ exit
 }
 
 #This script needs Get-ServerDNS.ps1 in the same folder
-
-
+#Get this file from Jay
 if (-NOT (Test-Path "$Pwd\Get-ServerDNS.ps1")) {
 
 write-host "This script needs Get-ServerDNS.ps1"
-#write-host "It can be downloaded from here: "
+write-host "It should be in the ZIP File, if not, get it from Jay "
 #write-host "https://gallery.technet.microsoft.com/ "
 pause
 exit
 }
 
-#This script needs Get-ServerDNS.ps1 in the same folder
-
+#This script needs OtherDNS-servers.txt in the same folder
+#Create a text file and list Other DNS Servers
+#In future I will create this file automatically
 
 if (-NOT (Test-Path "$Pwd\OtherDNS-servers.txt")) {
 
